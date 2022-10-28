@@ -1,7 +1,7 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.thegoldensource.cm</groupId>
-	<artifactId>InstallationScenariosOracle</artifactId>
+	<artifactId>InstallationScenarios</artifactId>
 	<version>8.8.1</version>
 	<name>Installation Scenarios Oracle</name>
 	
