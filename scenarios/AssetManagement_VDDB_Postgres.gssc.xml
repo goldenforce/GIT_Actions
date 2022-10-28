@@ -1,0 +1,433 @@
+<Scenario dataWarehouse="false" database="Postgres" desc="Asset Management - Postgres" id="AssetManagementVDDB_PG" 
+	name="Asset Management VDDB - Postgres" operatingsystem="Linux" vddbRequired="false">
+    <Installation downloadSiteFilter="8.8.1" generateDDL="false" haltOnError="true">
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Meta_Model_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Configuration_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Logging_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Workflow_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Exception_Management_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_GSDM_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_GoldenSource_Objects_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_DataWarehouse_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_Meta_Model_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_Configuration_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_Logging_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_Workflow_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_Exception_Management_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_GSDM_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_DataWarehouse_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="false" id="Full_Datamodel_Workstation_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Full_Datamodel_GoldenSource_Objects_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Meta_Model_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Configuration_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Logging_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Workflow_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_Exception_Management_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_GSDM_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_GoldenSource_Objects_Oracle"/>
+		<Package category="Datamodel" destination="GoldenCopy" optional="true" id="Patch_Datamodel_DataWarehouse_Oracle"/>
+		
+		<Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_Meta_Model_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_Exception_Management_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_VDDB_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_GoldenSource_Objects_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Full_Datamodel_Meta_Model_Postgres" optional="false"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Full_Datamodel_Exception_Management_Postgres" optional="false"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Full_Datamodel_VDDB_Postgres" optional="false"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Full_Datamodel_GoldenSource_Objects_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_Meta_Model_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_Exception_Management_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_VDDB_Postgres" optional="true"/>
+        <Package category="Datamodel" destination="VendorDetail" id="Patch_Datamodel_GoldenSource_Objects_Postgres" optional="true"/>
+        
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Exception_Management"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_GSDM_VDDB"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Rules"/>
+		<Package category="Starterset" destination="GoldenCopy" force="false" name="Starterset Reference Configuration" optional="false" type="full" version="8.8.1.01"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Reference_Configuration"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Base_Configuration"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_GoldenSource_Objects"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_DataWarehouse" />
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Reference_DataWarehouse"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Warehouse_GoldenSource_Objects"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Reference_Processing"/>
+		
+		<Package category="Starterset" destination="VendorDetail" id="Full_Starterset_Exception_Management" optional="false"/>
+        <Package category="Starterset" destination="VendorDetail" id="Full_Starterset_GSDM_VDDB" optional="false"/>
+        <Package category="Starterset" destination="VendorDetail" id="Full_Starterset_Market_Data" optional="false"/>
+        <Package category="Starterset" destination="VendorDetail" id="Full_Starterset_Rules" optional="false"/>
+		<Package category="Starterset" destination="VendorDetail" force="false" name="Starterset Reference Configuration" optional="false" type="full" version="8.8.1.01"/>
+        <Package category="Starterset" destination="VendorDetail" id="Full_Starterset_Reference_Configuration" optional="false"/>
+        <Package category="Starterset" destination="VendorDetail" id="Full_Starterset_GoldenSource_Objects" optional="false"/>
+        
+		<Package category="GSO Definition" destination="GoldenCopy" optional="true" id="Full_Securities_GoldenSource_Objects"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="true" id="Patch_Securities_GoldenSource_Objects"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="true" id="Full_GoldenSource_Objects_Datawarehouse"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="true" id="Patch_GoldenSource_Objects_Datawarehouse"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="true" id="Full_GoldenSource_Objects_Securities_Datawarehouse_Addon"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="true" id="Patch_GoldenSource_Objects_Securities_Datawarehouse_Addon"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Patch_Base_Components_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Patch_Reference_Engine_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Patch_Message_Translator_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="false" id="Full_Base_Components_Linux_Oracle19c"/>
+		<Package category="SaveDTD" destination="GoldenCopy" optional="false" id="Full_Reference_Engine_Default_Configuration"/>
+		<Package category="SaveDTD" destination="VendorDetail" optional="false" id="Full_Reference_Engine_SingleListing_Configuration"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Full_Reference_Engine_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="false" id="Full_Message_Translator_Linux_Oracle19c"/>
+		<Package category="SaveDTD" destination="GoldenCopy" optional="true" id="Full_Benchmark_Configuration"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Full_Benchmark_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Full_Rules_Adapter_Linux_Oracle"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Patch_Base_Components_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Patch_Reference_Engine_Linux_Oracle19c"/>
+		<Package category="Engine" destination="Engine Binaries" optional="true" id="Patch_Message_Translator_Linux_Oracle19c"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Standard_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="false" id="Full_Reference_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Benchmark_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Price_Loader_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Corporate_Action_Business_Entities"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_SwiftOutbound_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="false" id="Full_Consolidated_Asset_Setup_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Standard_Connection_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_WM_Daten_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_CoppClark_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Bloomberg_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Fitch_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Markit_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Reuters_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_RIMES_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Standard&amp;Poors_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Telekurs_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_RMDS_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_EMBS_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Ratings_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_BECRS_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Straight_Through_Processing_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_GLEIF_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Bloomberg_BVAL_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Refinitiv_DSP_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_Workstation_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="true" id="Full_DataWarehouse_Workflows"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Connection_Version"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Connection_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Security_to_Entity_CrossWalk_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_ISIDPlus_db_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Corporate_Action_ISO_15022_Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fitch_Base"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Markit_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_CUSIP_db_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_GICS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Global_Legal_Entity_Identifier_Foundation_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_GSFD-ISO10383_Markets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Global_Legal_Entity_Identifier_Foundation_LEI"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Rimes_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_SDM_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Copp_Clark_Holiday_Reference_Data_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Regulatory_Dataset_-_Classification"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Regulatory_Dataset_-_Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_Regulatory_MiFIR_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_WM_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fitch_RDS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DS_FATCA_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DSOS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_IDS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_Connections_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Swaps_Monitor_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_eMBS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_SIX_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Moodys_RDS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XpressFeed_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XpressFeed_BECRS_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_Regulatory_MiFIDII_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Dataset_Classification_BICS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Dataset_Classification_CFI_2015"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_Regulatory_MiFIR_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_eMBS_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fitch_RDS_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Global_Legal_Entity_Identifier_Foundation_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_IDS_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Markit_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Moodys_RDS_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DS_FATCA_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DSOS_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_Regulatory_MiFIDII_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_CUSIP_db_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_SDM_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XpressFeed_BECRS_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XpressFeed_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_SIX_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Swaps_Monitor_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_WM_Domain_DataSets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Credit_Risk"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_BO_3rdP_Security_Ratings-DBRS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_BO_3rdP_Security_Ratings-Fitch"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_BO_3rdP_Security_Ratings-Moodys"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_BO_3rdP_Security_Ratings-S&amp;P"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_CMO_Whole_Loans_CMBS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_MiFIR_Transparency_-_Cash"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Corporate_Actions"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Currencies"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_End_of_Day_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Equity_Listed_Futures"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Equity_Listed_Options"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Commodities_and_Commodity_Options"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Equity"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Non-Equity_Listed_Options"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Domains_as_Service"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Money_Market"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fitch_RDS_History"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fitch_RDS_Issue_Ratings"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fitch_RDS_Issuer_Ratings"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Moodys_RDS_Organization"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Moodys_RDS_Instrument"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XF_-_Entity_Ratings"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XF_-_Security_Ratings"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XF_-_BECRS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_XF_-_Foundation"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Equity_Options"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Index"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Municipals"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Mutual_Funds"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Preferred"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Warrants"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Mortgage_Pools"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_PreMarket_Equity"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Equity_MiFID"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Corp_Gov_Conv"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_End_of_Day_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_Equity_Descriptive"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_Fixed_Income_Descriptive_and_Bulk"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_Fixed_Income_Preferred_Descriptive"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_EXT_High_Quality_Liquid_Assets"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_Per_Security"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Fidelity_ISO15022"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_descriptive"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data_IDC_ISO15022"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Markit_RED"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Markit_CDS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Markit_Loan_CDS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_Corporate_Action"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Equity_Descriptive"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Fixed_Income_Descriptive"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Select_Corporate_Action"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Select_Symbol_Cross_Reference"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Select_End_of_Day_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Select_Terms_and_Conditions"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Equity_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Fixed_Income_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Select_IntraDay_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Select_Bond_Schedules"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_OnSite_CMO_ABS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_OnSite_Government_Corporate"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_OnSite_Mortgages"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Thomson_Reuters_DataScope_ISO_15022"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_RIMES_Fixed_Income_Benchmarks"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Security_to_Entity_CrossWalk"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_GICS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_ISIDPlus_db"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_ANNA_db"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_CUSIP_db"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_SDM_Municipal_Bond_Information_Service"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Swaps_Monitor_Financial_Calendar"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_SWIFT_Corporate_Action_Narrative"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_SWIFT_Corporate_Action_Notifications"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_D_Corporate_Action_Data_-_ISO_15022"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Valordata_Feed_A_Static_and_Cross_Reference_Data"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Valordata_Feed_B_Term_and_Conditions_Data"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Valordata_Feed_Common_Package"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Valordata_Feed_C_Market_and_Listing_Data"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Valordata_Feed_D_Corporate_Action_Data"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Telekurs_Valordata_Feed_E_Valuation_Price_Data"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Universe_Maintenance"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_WM_EDDY"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_WM_GAT"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_WM_Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_eMBS_Pool_DB_additional_set"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_eMBS_Pool_DB_common_set"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Transaction_Tax"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_FATCA"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Certificates"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Copp_Clark-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Copp_Clark_Holiday_Reference_Data"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Interactive_Data-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_Descriptive"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_EOD_Listed_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_Evaluated_Pricing"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Swaps_Monitor-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_SIX_VDF-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_GICS-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_S&amp;P_ISIDPlus_db-Common"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Rating_Values_as_Service"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_GLEIF_ISIN-to-LEI"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Corporate_Actions_V2"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Reuters_DataScope_Plus_MiFIDII"/>
+		
+		<Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_EXT_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Interactive_Data_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DataScope_FATCA_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Telekurs_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_StandardnPoors_ISIDPlus_db_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Fitch_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Markit_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Moodys_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_CUSIP_db_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_GICS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_RX_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Swaps_Monitor_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Rimes_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_SDM_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_eMBS_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DataScope_OnSite_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Security_to_Entity_CrossWalk_Base" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Copp_Clark_Holiday_Reference_Data_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_EXT_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Regulatory_Dataset_-_Classification" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Regulatory_Dataset_-_Common" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_EXT_DataSets_IDMV_EDMV" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_Regulatory_MiFIR_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_WM_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Fitch_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Fitch_RDS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DS_FATCA_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DSOS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Interactive_Data_IDS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_ICE_Apex_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Global_Legal_Entity_Identifier_Foundation_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_Connections_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_StandardnPoors_Connections_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Swaps_Monitor_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_eMBS_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_eMBS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_SIX_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Moodys_RDS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_XpressFeed_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_XpressFeed_BECRS_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_Market_DataSet" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Interactive_Market_DataSet" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_MSCI_GICS_Market_DataSet" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_Market_DataSet" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_StandardnPoors_ISIDPlus_db_Market_DataSet" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Telekurs_Market_DataSet" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Country_Level_Market_Dataset" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Reuters_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Reuters_Regulatory_MiFIDII_DataSets" optional="true"/>	
+		<Package category="Mapping" destination="VendorDetail" id="Full_Dataset_Classification_BICS" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Dataset_Classification_CFI_2015" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_EXT_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Bloomberg_Regulatory_MiFIR_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_eMBS_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Fitch_RDS_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Global_Legal_Entity_Identifier_Foundation_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_ICE_Apex_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Interactive_Data_IDS_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Markit_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Moodys_RDS_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Reuters_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DS_FATCA_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_Reuters_DSOS_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Reuters_Regulatory_MiFIDII_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_CUSIP_db_Domain_DataSets" optional="true"/>
+		<Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_SDM_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_XpressFeed_BECRS_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_S&amp;P_XpressFeed_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_SIX_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_Swaps_Monitor_Domain_DataSets" optional="true"/>
+        <Package category="Mapping" destination="VendorDetail" id="Full_WM_Domain_DataSets" optional="true"/>	
+		
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_Options"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_ICE_Apex_Basic_Bond_Evaluation"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_BVAL_Infrastructure"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Additional_Fieldset_Corp_Govt_Conv"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_DL_Additional_Fieldset_-_Credit_Risk"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_DL_BO_3rdP_Corporate_Structure_Ratings_-_Fitch_V2"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_DL_BO_3rdP_Corporate_Structure_Ratings_-_Moodys"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_BB_DL_BO_3rdP_Corporate_Structure_Ratings_-_S&amp;P"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Additional_Fieldset_Mortgage_Non_Pool"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_MiFIR_Transparency_-_Equity"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_MiFIR_Transparency_-_Fixed_Income"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_MiFIR_Transparency_-_Futures_and_Options"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Simplified_Supervisory_Formula_Approach"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Universe_Maintenance_-_Entities"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Global_Municipals_V2"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Credit_Risk_V2"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_Additional_Fieldset_Equity"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_CINS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Bloomberg_DL_GICS"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_Refinitiv_DS_Plus_Equity_Reference_Data"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Market_Data_Solution"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Full_GoldenSource_Objects_Market_Data"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Patch_GoldenSource_Objects_Market_Data"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="false" id="Full_Pricing_Workflows"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="false" id="Full_Market_Data_Solution_Workflows"/>
+		<Package category="Starterset" destination="GoldenCopy" optional="false" id="Full_Starterset_Risk_Master"/>
+		<Package category="Workflow" destination="GoldenCopy" optional="false" id="Full_Risk_Master_Workflows"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Full_GoldenSource_Objects_Risk_Master"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Patch_GoldenSource_Objects_Risk_Master"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Full_GoldenSource_Objects_Rules_Execution"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Patch_GoldenSource_Objects_Rules_Execution"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Full_GoldenSource_Objects_Quant_Lib"/>
+		<Package category="GSO Definition" destination="GoldenCopy" optional="false" id="Patch_GoldenSource_Objects_Quant_Lib"/>
+		<Package category="Mapping" destination="GoldenCopy" optional="true" id="Full_AutomationPrerequisites"/>
+	</Installation>
+	<SupplementalPackages>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Orchestrator"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Orchestrator_Engine_Installer"/>
+		<Package category="Application" isActivityFeature="false" uploadToRepository="true" id="Full_GoldenSource_Objects_Designer"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Reference_Plugin"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_DataWarehouse_Activities"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Framework"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Framework"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Common"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Common"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Securities"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Securities"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Benchmark"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Benchmark"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_DataWarehouse"/>
+        <Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_DataWarehouse"/>
+		<Package category="Application" uploadToRepository="true" id="Full_GoldenSource_Objects_Services"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Datamodel_Archive_Purge"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_SwiftOutbound_Plugin"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Trace_Integration-SWIFT_Outbound"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Accounting"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Accounting"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Customers"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Customers"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Positions"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Positions"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Market_Data_Solution_Screens"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Workstation_Screens_for_Product_Taxonomy"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Workstation_Screens_for_Product_Taxonomy"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Pricing_Workbench_Configuration_Screens"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Pricing_Workbench_Configuration_Screens"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Market_Data_Solution_Configuration_Screens"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Market_Data_Solution_Configuration_Screens"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Pricing_Plugin"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Utility_Plugin"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Risk_Master_Plugin"/>
+		<Package category="Application" isActivityFeature="true" uploadToRepository="true" id="Full_Generic_Rule_Engine"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Risk_Master_Configuration_Screens"/>
+		<Package category="Application" uploadToRepository="true" id="Patch_Risk_Master_Configuration_Screens"/>
+		<Package category="Application" uploadToRepository="true" id="Full_Risk_Master_Screens"/>
+    </SupplementalPackages>
+</Scenario>

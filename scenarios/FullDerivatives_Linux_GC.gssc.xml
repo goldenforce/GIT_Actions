@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Scenario dataWarehouse="false" database="Oracle" desc="This will set up a GoldenCopy and installs all components of the Derivatives scenario." id="FullDerivativesLinuxGC" name="Full Derivatives GC" operatingsystem="Linux" vddbRequired="false" version="1.0">
+    <Installation downloadSiteFilter="8.8.1" generateDDL="false" haltOnError="true">
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Meta_Model_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Configuration_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Logging_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Workflow_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Exception_Management_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_GSDM_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_GoldenSource_Objects_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Meta_Model_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Configuration_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Logging_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Workflow_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Exception_Management_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_GSDM_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_GoldenSource_Objects_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Meta_Model_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Configuration_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Logging_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Workflow_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Exception_Management_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_GSDM_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_GoldenSource_Objects_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_Exception_Management" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_GSDM_VDDB" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_Market_Data" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_Rules" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_Reference_Configuration" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_Base_Configuration" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_GoldenSource_Objects" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Starterset_Reference_Processing" optional="false"/>
+        <Package destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle12c" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle12c11g" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Reference_Engine_Linux_Oracle" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Reference_Engine_Linux_Oracle11g" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Positions_Engine_Linux_Oracle12c" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Positions_Engine_Linux_Oracle11g" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Message_Translator_Linux_Oracle12c" optional="true"/>
+        <Package destination="Engine Binaries" id="Full_Base_Components_Linux_Oracle12c" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Base_Components_Linux_Oracle11g" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Reference_Engine_Default_Configuration" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Reference_Engine_Linux_Oracle" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Reference_Engine_Linux_Oracle11g" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Positions_Engine_Linux_Oracle12c" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Positions_Engine_Linux_Oracle11g" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Message_Translator_Linux_Oracle12c" optional="false"/>
+        <Package destination="Engine Binaries" id="Full_Message_Translator_Linux_Oracle11g" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Benchmark_Configuration" optional="true"/>
+        <Package destination="Engine Binaries" id="Full_Benchmark_Linux_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Derivatives_Business_Entities" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle12c" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle12c11g" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Reference_Engine_Linux_Oracle" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Reference_Engine_Linux_Oracle11g" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Positions_Engine_Linux_Oracle12c" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Positions_Engine_Linux_Oracle11g" optional="true"/>
+        <Package destination="Engine Binaries" id="Patch_Message_Translator_Linux_Oracle12c" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Standard_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reference_Workflows" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Positions_Workflows" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Benchmark_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Price_Loader_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Consolidated_Asset_Setup_Workflows" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Standard_Connection_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_WM_Daten_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_CoppClark_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_RIMES_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SnP_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_PV_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SD_Reval_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_RMDS_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_EMBS_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Ratings_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_BECRS_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Straight_Through_Processing_Workflows" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Connection_Version" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Connection_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Security_to_Entity_CrossWalk_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_FATCA_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_ISIDPlus_db_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Corporate_Action_ISO_15022_Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Moodys_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_CUSIP_db_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_GICS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_RX_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_GSFD-ISO10383_Markets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Rimes_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_SDM_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_eMBS_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_OnSite_Base" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Copp_Clark_Holiday_Reference_Data_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_Connections_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_RDS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_WM_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DS_FATCA_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DSOS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data_IDS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_Connections_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Swaps_Monitor_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_eMBS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SIX_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Moodys_RDS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_XpressFeed_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_XpressFeed_BECRS_DataSets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_MSCI_GICS_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_ISIDPlus_db_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Swaps_Monitor_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Market_DataSet" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Country_Level_Market_Dataset" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Credit_Risk" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_BB_BO_3rdP_Security_Ratings-DBRS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_BB_BO_3rdP_Security_Ratings-Fitch" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_BB_BO_3rdP_Security_Ratings-Moodys" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_BB_BO_3rdP_Security_Ratings-S&amp;P" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_CMO_Whole_Loans_CMBS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Corporate_Actions" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Currencies" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_End_of_Day_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Commodities_and_Commodity_Options" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Convertibles" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Corporates" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Equity" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Domains_as_Service" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_WM_VF1" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_WM_VF1_GAT" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Money_Market" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_RDS_History" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_RDS_Issue_Ratings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_RDS_Issuer_Ratings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Moodys_RDS_Organization" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Moodys_RDS_Instrument" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_XF_Entity_Ratings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_XF_Security_Ratings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_XF_BECRS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_XF_Foundation" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Equity_Options" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Index" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Governments_Agencies" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Municipals" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Mutual_Funds" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Preferred" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Warrants" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Mortgage_Pools" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Ratings_Fitch" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Ratings_Moodys" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Ratings_SnP" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_CR_Ratings_Fitch" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_CR_Ratings_Moodys" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_CR_Ratings_S&amp;P" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_PreMarket_Equity" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_PreMarket_Equity_Option" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Ratings_DBRS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Equity_MiFID" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Corp_Gov_Conv" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_End_of_Day_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_Equity_Descriptive" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_Fixed_Income_Descriptive_and_Bulk" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_Fixed_Income_Preferred_Descriptive" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_EXT_High_Quality_Liquid_Assets" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_Per_Security" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Collateral" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_DnB_WorldBase_Marketing_Plus_with_Linkage" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fidelity_ISO15022" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_Ratings_Delivery_Service" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Fitch_Ratings_Historical" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data_FTS_pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data_FTS_descriptive" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Evaluated_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data_IDC_ISO15022" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Corporate_Action" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Ratings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Cross Reference" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Earnings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Payments-Income" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Payments-Income-Ratings" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_IDC_Pricing_and_Reference_Data_FTS-Terms&amp;Conditions" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_RED" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_Business_Entities" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_Portfolio_Valuations" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_CDS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Markit_Loan_CDS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Moody's_RDS_PF" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Moody's_RDS_Corporate_Debt" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_Corporate_Action" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Equity_Descriptive" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Fixed_Income_Descriptive" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Select_Corporate_Action" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Select_Symbol_Cross_Reference" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Select_End_of_Day_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Select_Terms_and_Conditions" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Equity_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Fixed_Income_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Select_IntraDay_Pricing" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_Select_Bond_Schedules" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_OnSite_CMO_ABS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_OnSite_Government_Corporate" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_OnSite_Mortgages" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Thomson_Reuters_DataScope_ISO_15022" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_RIMES_Fixed_Income_Benchmarks" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Security_to_Entity_CrossWalk" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_RX_GInSF_HistorynSpan" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_GICS" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_ISIDPlus_db" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_ISIDPlus_DB_SymbolsnExchange" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_RX_GInSF_MasternDaily" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_ANNA_db" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_CUSIP_db" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_StandardnPoors_RX_PF_MasternDaily" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_SDM_Municipal_Bond_Information_Service" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Swaps_Monitor_Financial_Calendar" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SWIFT_Corporate_Action_Narrative" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SWIFT_Corporate_Action_Notifications" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_D_Corporate_Action_Data_-_ISO_15022" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Valordata_Feed_A_Static_and_Cross_Reference_Data" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Valordata_Feed_B_Term_and_Conditions_Data" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Valordata_Feed_Common_Package" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Valordata_Feed_C_Market_and_Listing_Data" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Valordata_Feed_D_Corporate_Action_Data" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Telekurs_Valordata_Feed_E_Valuation_Price_Data" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SD_REVAL_Credit_Default_Deals" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SD_REVAL_Equity_Trades" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SD_REVAL_Foreign_Exchange_Deals" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SD_REVAL_Interest_Rate_Deals" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Universe_Maintenance" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_eMBS_Pool_DB_additional_set" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_eMBS_Pool_DB_common_set" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Transaction_Tax" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters_DataScope_FATCA" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Bloomberg_DL_Global_Certificates" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Copp_Clark-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Copp_Clark_Holiday_Reference_Data" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Interactive_Data-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Reuters-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_Swaps_Monitor-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_SIX_VDF-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_GICS-Common" optional="true"/>
+        <Package destination="GoldenCopy" id="Full_S&amp;P_ISIDPlus_db-Common" optional="true"/>
+    </Installation>
+    <SupplementalPackages>
+        <Package id="Full_Orchestrator" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Orchestrator_Engine_Installer" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Data_Migration_Manager" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Base_Components_Linux_Oracle12c_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Base_Components_Linux_Oracle11g_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Base_Components_Windows_Oracle12c" uploadToRepository="true"/>
+        <Package id="Full_Base_Components_Windows_Oracle12c_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Patch_Base_Components_Windows_Oracle_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Message_Translator_Linux_Oracle12c_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Message_Translator_Linux_Oracle11g_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Message_Translator_Windows_Oracle11g_x86" uploadToRepository="true"/>
+        <Package id="Full_Message_Translator_Windows_Oracle12c" uploadToRepository="true"/>
+        <Package id="Full_Message_Translator_Windows_Oracle12c_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Business_Entity_Translator_Linux_Oracle" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Business_Entity_Translator_Windows_Oracle" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Mapping_Designer" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Test_Framework_Commons" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Test_Automation_Framework_for_Eclipse" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Test_Automation_Developer" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Reference_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Positions_Performance_Agents_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Installation_Center" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Installation_Scenarios" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Workstation_Framework_for_Eclipse" isActivityFeature="false" uploadToRepository="true"/>
+        <Package id="Full_Workstation_Developer" isActivityFeature="false" uploadToRepository="true"/>
+        <Package id="Full_Activity_Developer_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Reference_Data_Administration_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Test_Automation_Developer_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Mapping_Designer_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Positions_Administration_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Orchestrator_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Reference_Data_Administration_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Full_Installation_Center_Help" isActivityFeature="true" uploadToRepository="true"/>
+        <Package id="Patch_GoldenSource_Workbench" uploadToRepository="true"/>
+        <Package id="Full_Database_Wrapper" uploadToRepository="true"/>
+        <Package id="Full_Orchestrator_Client_Libraries" isActivityFeature="false" uploadToRepository="true"/>
+        <Package id="Full_Test_Automation_Framework"/>
+        <Package id="Full_Publishing_Migration_Toolkit" uploadToRepository="true"/>
+        <Package id="Full_Extension_Table_Developer_Linux_Oracle" uploadToRepository="true"/>
+        <Package id="Full_Rules_Adapter_Linux_Oracle" uploadToRepository="true"/>
+        <Package id="Full_JBoss_Rules_Integration_for_Positions_Linux_Oracle11g" uploadToRepository="true"/>
+        <Package id="Full_Publishing_Sample_Workflows_Oracle" uploadToRepository="true"/>
+        <Package id="Full_Excel_Support" uploadToRepository="true"/>
+        <Package id="Full_Command_Line_Tools" uploadToRepository="true"/>
+        <Package id="Full_Business_Entity_Command_Line_Tools" uploadToRepository="true"/>
+        <Package id="Full_Orchestrator_Activity_Samples" uploadToRepository="true"/>
+        <Package id="Full_Mapping_Composer_Oracle" uploadToRepository="true"/>
+        <Package id="Full_Transaction_Tracer_Oracle" uploadToRepository="true"/>
+        <Package id="Full_Schedule_Studio" uploadToRepository="true"/>
+        <Package id="Full_Implementation_Studio" uploadToRepository="true"/>
+        <Package id="Full_Workstation_Framework" uploadToRepository="true"/>
+        <Package id="Patch_Workstation_Framework" uploadToRepository="true"/>
+        <Package id="Full_Workstation_Screens_for_Derivatives" uploadToRepository="true"/>
+        <Package id="Patch_Workstation_Screens_for_Derivatives" uploadToRepository="true"/>
+        <Package id="Full_Positions_Java_Performance_Agents_Setup_Oracle" uploadToRepository="true"/>
+        <Package id="Full_Positions_Performance_Agents_Linux_Oracle12c" uploadToRepository="true"/>
+        <Package id="Full_Positions_Performance_Agents_Linux_Oracle11g" uploadToRepository="true"/>
+        <Package id="Full_Datamodel_Archive_Purge" uploadToRepository="true"/>
+        <Package id="Full_Command_Line_Tools" uploadToRepository="true"/>
+        <Package id="Full_Data_Migration_Manager_Stand_Alone" uploadToRepository="true"/>
+        <Package id="Full_Workflow_Test_Framework" uploadToRepository="true"/>
+        <Package id="Full_Workstation_Framework" uploadToRepository="true"/>
+        <Package id="Full_Prerequisites_Checker" uploadToRepository="true"/>
+        <Package id="Full_Trillium_Integration_Linux_Oracle" uploadToRepository="true"/>
+        <Package id="Full_Trillium_Workflows_Linux_Oracle" uploadToRepository="true"/>
+    </SupplementalPackages>
+</Scenario>

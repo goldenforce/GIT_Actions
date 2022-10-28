@@ -1,0 +1,19 @@
+<assembly>
+	<id>ISO-zip</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>assemblies</directory>
+			<outputDirectory>assemblies</outputDirectory>
+			<filtered>true</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>target/generated-resources/xml/xslt</directory>
+			<outputDirectory>scenarios</outputDirectory>
+			<filtered>true</filtered>
+		</fileSet>
+	</fileSets>
+</assembly>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PACKAGE_NAME
+Bundle-SymbolicName: PACKAGE_ID;singleton:=true
+Bundle-Version: PACKAGE_FEATURE_VERSION
+Bundle-Vendor: GoldenSource Corporation
+Bundle-Localization: plugin
+Require-Bundle: com.thegoldensource.deployment.base

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Scenario dataWarehouse="false" database="Oracle" desc="This scenario will install Risk Master packages." id="Risk_Master" name="Risk Master" operatingsystem="Linux" vddbRequired="false" version="1.1">
+    <Installation downloadSiteFilter="8.8.1" generateDDL="false" haltOnError="true">
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Risk_Master" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Price_Loader_Workflows" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Risk_Master_Workflows" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Full_GoldenSource_Objects_Risk_Master" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Patch_GoldenSource_Objects_Risk_Master" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Full_GoldenSource_Objects_Rules_Execution" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Patch_GoldenSource_Objects_Rules_Execution" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Full_GoldenSource_Objects_Quant_Lib" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Patch_GoldenSource_Objects_Quant_Lib" optional="false"/>
+    </Installation>
+    <SupplementalPackages>
+        <Package category="Application" id="Full_Utility_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Risk_Master_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Generic_Rule_Engine" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Pricing_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Risk_Master_Configuration_Screens" uploadToRepository="true"/>
+        <Package category="Application" id="Patch_Risk_Master_Configuration_Screens" uploadToRepository="true"/>
+		<Package category="Application" id="Full_Risk_Master_Screens" uploadToRepository="true" />
+    </SupplementalPackages>
+</Scenario>

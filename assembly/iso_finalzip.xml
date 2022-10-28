@@ -1,0 +1,19 @@
+<assembly>
+	<id>ISO-FinalZip</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+		<directory>target</directory>
+		<outputDirectory></outputDirectory>
+		<filtered>true</filtered>
+			<includes>
+				<include>ISO*.zip</include>
+				<include>ReleaseNotes.html</include>
+				<include>PackageDescription.xml</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Scenario dataWarehouse="false" database="Oracle" desc="This scenario will generate SQL scripts for manually creating a GoldenCopy schema." id="GC_DDL" name="GoldenCopy DDL" vddbRequired="false" version="1.0">
+    <Installation downloadSiteFilter="8.8.1" generateDDL="false" haltOnError="true">
+        <Package destination="GoldenCopy" id="Patch_Datamodel_BusinessEntity_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Meta_Model_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Configuration_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Logging_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Workflow_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Exception_Management_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_GSDM_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Full_Datamodel_BusinessEntity_Oracle" optional="false"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_BusinessEntity_Oracle" optional="true"/>
+        <Package destination="GoldenCopy" id="Patch_Datamodel_Workstation_Oracle" optional="false"/>
+    </Installation>
+    <SupplementalPackages/>
+</Scenario>

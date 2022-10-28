@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackageDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="PackageDescription.xsd">
+  <Package type="full" name="PACKAGE_NAME" version="PACKAGE_VERSION">
+    <Description>PACKAGE_DESCRIPTION</Description>
+    <Component>COMPONENT_NAME</Component>
+    <Content>
+      <File type="ReleaseNotes" path="ReleaseNotes.html"/>
+    </Content>
+  </Package>
+  <Deployment>
+    <Prerequisites>
+    </Prerequisites>
+  </Deployment>
+</PackageDescription>

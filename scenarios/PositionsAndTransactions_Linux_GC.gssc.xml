@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Scenario dataWarehouse="false" database="Oracle" desc="This scenario will set up a single GoldenCopy schema and installs all components needed for standard reference data processing and positions posting." id="PositionsAndTransactionsLinuxGC" name="Positions and Trasactions GC" operatingsystem="Linux" vddbRequired="false" version="1.1">
+    <Installation downloadSiteFilter="8.8.1" generateDDL="false" haltOnError="true">
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Meta_Model_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Configuration_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Logging_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Workflow_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Exception_Management_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_GSDM_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_GoldenSource_Objects_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_DataWarehouse_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_Meta_Model_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_Configuration_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_Logging_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_Workflow_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_Exception_Management_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_GSDM_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_GoldenSource_Objects_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Full_Datamodel_DataWarehouse_Oracle" optional="false"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Meta_Model_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Configuration_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Logging_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Workflow_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Exception_Management_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_GSDM_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_GoldenSource_Objects_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_DataWarehouse_Oracle" optional="true"/>
+        <Package category="Datamodel" destination="GoldenCopy" id="Patch_Datamodel_Workstation_Oracle" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Exception_Management" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_GSDM_VDDB" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Market_Data" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Rules" optional="false"/>
+		<Package category="Starterset" destination="GoldenCopy" force="false" name="Starterset Reference Configuration" optional="false" type="full" version="8.8.1.01"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Reference_Configuration" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Base_Configuration" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_DataWarehouse" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Reference_DataWarehouse" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_GoldenSource_Objects" optional="false"/>
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Reference_Processing" optional="false"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Reference_Engine_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Positions_Engine_Linux_Oracle" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Message_Translator_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Full_Base_Components_Linux_Oracle19c" optional="false"/>
+        <Package category="SaveDTD" destination="GoldenCopy" id="Full_Reference_Engine_Default_Configuration" optional="false"/>
+        <Package category="Engine" destination="Engine Binaries" id="Full_Reference_Engine_Linux_Oracle19c" optional="false"/>
+        <Package category="Engine" destination="Engine Binaries" id="Full_Positions_Engine_Linux_Oracle19c" optional="false"/>
+        <Package category="Engine" destination="Engine Binaries" id="Full_Message_Translator_Linux_Oracle19c" optional="false"/>
+        <Package category="Engine" destination="Engine Binaries" id="Full_DataModel_Positions_PerformanceAgents_Linux_Oracle" optional="true"/>
+        <Package category="SaveDTD" destination="GoldenCopy" id="Full_Benchmark_Configuration" optional="true"/>
+        <Package destination="Engine Binaries" id="Full_Benchmark_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Base_Components_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Reference_Engine_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Positions_Engine_Linux_Oracle19c" optional="true"/>
+        <Package category="Engine" destination="Engine Binaries" id="Patch_Message_Translator_Linux_Oracle19c" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Standard_Workflows" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Reference_Workflows" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Positions_Workflows" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Benchmark_Workflows" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Consolidated_Asset_Setup_Workflows" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_DataWarehouse_Workflows" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Verification_Tests_for_Reference" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Verification_Tests_for_Positions" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Standard_Connection_Workflows" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_WM_Daten_Workflows" optional="true"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_CoppClark_Workflows" optional="true"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Full_DataWarehouse_GoldenSource_Objects" optional="true"/>
+    </Installation>
+    <SupplementalPackages>
+        <Package category="Application" id="Full_Orchestrator" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Orchestrator_Engine_Installer" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Mapping_Designer" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Position_Activities" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_DataWarehouse_Activities" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_DataWarehouse_Command_Line" isActivityFeature="false" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Reference_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Database_Wrapper" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Orchestrator_Client_Libraries" isActivityFeature="false" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Publishing_Migration_Toolkit" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Extension_Table_Developer_Linux_Oracle" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Rules_Adapter_Linux_Oracle" uploadToRepository="true"/>
+        <Package category="Application" id="Full_JBoss_Rules_Integration_for_Positions_Linux_Oracle11g" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Publishing_Sample_Workflows_Oracle" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Excel_Support" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Command_Line_Tools" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Business_Entity_Command_Line_Tools" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Orchestrator_Activity_Samples" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Implementation_Studio" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Workstation_Framework" uploadToRepository="true"/>
+        <Package category="Application" id="Patch_Workstation_Framework" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Workstation_Screens_for_Common" uploadToRepository="true"/>
+        <Package category="Application" id="Patch_Workstation_Screens_for_Common" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Workstation_Screens_for_Positions" uploadToRepository="true"/>
+        <Package category="Application" id="Patch_Workstation_Screens_for_Positions" uploadToRepository="true"/>
+        <Package category="Application" id="Full_DataWarehouse" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Datamodel_Archive_Purge" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Command_Line_Tools" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Trillium_Integration_Linux_Oracle" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Trillium_Workflows_Linux_Oracle" uploadToRepository="true"/>
+    </SupplementalPackages>
+</Scenario>

@@ -1,0 +1,406 @@
+<PackageList>
+	<!-- Connections DataSets -->
+	<Package version="2022.09.19.0" name="Bloomberg DataSets" id="Full_Bloomberg_DataSets" optional="true" type="full"/>
+	<Package version="2021.03.15.0" name="Copp Clark Holiday Reference Data DataSets" id="Full_Copp_Clark_Holiday_Reference_Data_DataSets" optional="true" type="full"/>
+	<Package version="2021.03.15.0" name="eMBS DataSets" id="Full_eMBS_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Fitch RDS DataSets" id="Full_Fitch_RDS_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Global Legal Entity Identifier Foundation DataSets" id="Full_Global_Legal_Entity_Identifier_Foundation_DataSets" optional="true" type="full"/>
+	<Package version="2022.08.25.0" name="ICE Apex DataSets" id="Full_ICE_Apex_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Interactive Data IDS DataSets" id="Full_Interactive_Data_IDS_DataSets" optional="true" type="full"/>
+	<Package version="2022.03.18.0" name="Markit DataSets" id="Full_Markit_DataSets" optional="true" type="full"/>
+	<Package version="2022.06.30.0" name="Moodys RDS DataSets" id="Full_Moodys_RDS_DataSets" optional="true" type="full"/>
+	<Package version="2022.05.30.0" name="Reuters DataSets" id="Full_Reuters_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Reuters DS FATCA DataSets" id="Full_Reuters_DS_FATCA_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Reuters DSOS DataSets" id="Full_Reuters_DSOS_DataSets" optional="true" type="full"/>
+	<Package version="2022.09.30.0" name="SIX DataSets" id="Full_SIX_DataSets" optional="true" type="full"/>
+	<Package version="2021.04.01.0" name="Swaps Monitor DataSets" id="Full_Swaps_Monitor_DataSets" optional="true" type="full"/>
+	<Package version="2022.08.16.0" name="S&amp;P CUSIP db DataSets" id="Full_S&amp;P_CUSIP_db_DataSets" optional="true" type="full"/>
+	<Package version="2022.04.29.0" name="S&amp;P SDM DataSets" id="Full_S&amp;P_SDM_DataSets" optional="true" type="full"/>
+	<Package version="2022.07.19.0" name="S&amp;P XpressFeed DataSets" id="Full_S&amp;P_XpressFeed_DataSets" optional="true" type="full"/>
+	<Package version="2022.06.15.0" name="S&amp;P XpressFeed BECRS DataSets" id="Full_S&amp;P_XpressFeed_BECRS_DataSets" optional="true" type="full"/>
+	<Package version="2021.03.15.0" name="WM DataSets" id="Full_WM_DataSets" optional="true" type="full"/>	
+	<!--New DataSets in 005 Baseline -->
+	<Package version="2021.05.31.0" name="Dataset Classification BICS" id="Full_Dataset_Classification_BICS" optional="true" type="full"/>	
+	<!-- Added in 8.8.1.02 Baseline -->
+	<Package version="2022.03.30.0" name="Dataset Classification CFI 2015" id="Full_Dataset_Classification_CFI_2015" optional="true" type="full"/>	
+	<!-- 8.8.1.10 Baseline -->
+	<Package version="2022.02.28.0" name="DBRS RN DataSets" id="Full_DBRS_RN_DataSets" optional="true" type="full"/>
+	<!-- Domain DataSets -->
+	<Package version="2022.09.01.0" name="Bloomberg Domain DataSets" id="Full_Bloomberg_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Bloomberg EXT Domain DataSets" id="Full_Bloomberg_EXT_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.16.0" name="Bloomberg Regulatory MiFIR Domain DataSets" id="Full_Bloomberg_Regulatory_MiFIR_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.08.30.0" name="eMBS Domain DataSets" id="Full_eMBS_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2021.07.13.0" name="Fitch RDS Domain DataSets" id="Full_Fitch_RDS_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.04.07.0" name="Global Legal Entity Identifier Foundation Domain DataSets" id="Full_Global_Legal_Entity_Identifier_Foundation_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="ICE Apex Domain DataSets" id="Full_ICE_Apex_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Interactive Data IDS Domain DataSets" id="Full_Interactive_Data_IDS_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Markit Domain DataSets" id="Full_Markit_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.08.26.0" name="Moodys RDS Domain DataSets" id="Full_Moodys_RDS_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.05.24.0" name="Reuters Domain DataSets" id="Full_Reuters_Domain_DataSets" optional="true" type="full"/>	
+	<Package version="2020.10.30.0" name="Reuters DS FATCA Domain DataSets" id="Full_Reuters_DS_FATCA_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.05.24.0" name="Reuters DSOS Domain DataSets" id="Full_Reuters_DSOS_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="Reuters Regulatory MiFIDII Domain DataSets" id="Full_Reuters_Regulatory_MiFIDII_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.04.15.0" name="S&amp;P CUSIP db Domain DataSets" id="Full_S&amp;P_CUSIP_db_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.16.0" name="S&amp;P SDM Domain DataSets" id="Full_S&amp;P_SDM_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="S&amp;P XpressFeed BECRS Domain DataSets" id="Full_S&amp;P_XpressFeed_BECRS_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2020.10.30.0" name="S&amp;P XpressFeed Domain DataSets" id="Full_S&amp;P_XpressFeed_Domain_DataSets" optional="true" type="full"/>
+	<Package version="2022.09.30.0" name="SIX Domain DataSets" id="Full_SIX_Domain_DataSets" optional="true" type="full"/>
+	<!-- <Package version="2020.12.30.0" name="Swaps Monitor Domain DataSets" id="Full_Swaps_Monitor_Domain_DataSets" optional="true" type="full"/> -->
+	<Package version="2021.03.15.0" name="WM Domain DataSets" id="Full_WM_Domain_DataSets" optional="true" type="full"/>
+	<!-- DataSets from DM -->
+	<Package version="2021.02.25.0" name="Regulatory Dataset - Classification" id="Full_Regulatory_Dataset_-_Classification" optional="true" type="full"/>
+	<Package version="2021.05.26.0" name="Regulatory Dataset - Common" id="Full_Regulatory_Dataset_-_Common" optional="true" type="full"/>	
+	<!-- DataModel -->
+	<Package version="8.8.1.01" name="Datamodel Configuration Oracle" id="Full_Datamodel_Configuration_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel DataWarehouse Oracle" id="Full_Datamodel_DataWarehouse_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel DataWarehouse Standalone GSDM Oracle" id="Full_Datamodel_DataWarehouse_Standalone_GSDM_Oracle" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Exception Management Oracle" id="Full_Datamodel_Exception_Management_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel GoldenSource Objects Oracle" id="Full_Datamodel_GoldenSource_Objects_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel GSDM Oracle" id="Full_Datamodel_GSDM_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Logging Oracle" id="Full_Datamodel_Logging_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Meta Model Oracle" id="Full_Datamodel_Meta_Model_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel VDDB Oracle" id="Full_Datamodel_VDDB_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Workflow Oracle" id="Full_Datamodel_Workflow_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Workstation Oracle" id="Full_Datamodel_Workstation_Oracle" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel HBase GSDM" id="Full_Datamodel_HBase_GSDM" optional="false" type="full"/>
+	<Package version="8.99.14.0" name="Datamodel Archive Purge" id="Full_Datamodel_Archive_Purge" optional="true" type="full"/>
+	<!-- DataModel Patches Oracle -->
+	<Package version="8.8.1.34" name="Datamodel Configuration Oracle" id="Patch_Datamodel_Configuration_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.37" name="Datamodel GSDM Oracle" id="Patch_Datamodel_GSDM_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.37" name="Datamodel VDDB Oracle" id="Patch_Datamodel_VDDB_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.36" name="Datamodel Meta Model Oracle" id="Patch_Datamodel_Meta_Model_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.35" name="Datamodel Workflow Oracle" id="Patch_Datamodel_Workflow_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.35" name="Datamodel GoldenSource Objects Oracle" id="Patch_Datamodel_GoldenSource_Objects_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.35" name="Datamodel DataWarehouse Oracle" id="Patch_Datamodel_DataWarehouse_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.29" name="Datamodel DataWarehouse Standalone GSDM Oracle" id="Patch_Datamodel_DataWarehouse_Standalone_GSDM_Oracle" optional="true" type="patch"/>
+	<Package version="8.8.1.31" name="Datamodel Exception Management Oracle" id="Patch_Datamodel_Exception_Management_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.09" name="Datamodel Logging Oracle" id="Patch_Datamodel_Logging_Oracle" optional="false" type="patch"/>
+	<!-- DataModel Postgres-->
+	<Package version="8.8.1.01" name="Datamodel Configuration Postgres" id="Full_Datamodel_Configuration_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel DataWarehouse Postgres" id="Full_Datamodel_DataWarehouse_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel DataWarehouse Standalone GSDM Postgres" id="Full_Datamodel_DataWarehouse_Standalone_GSDM_Postgres" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Exception Management Postgres" id="Full_Datamodel_Exception_Management_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel GoldenSource Objects Postgres" id="Full_Datamodel_GoldenSource_Objects_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel GSDM Postgres" id="Full_Datamodel_GSDM_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Logging Postgres" id="Full_Datamodel_Logging_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Meta Model Postgres" id="Full_Datamodel_Meta_Model_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel VDDB Postgres" id="Full_Datamodel_VDDB_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Datamodel Workflow Postgres" id="Full_Datamodel_Workflow_Postgres" optional="false" type="full"/>
+	<!-- DataModel Patches Postgres -->
+	<Package version="8.8.1.34" name="Datamodel Configuration Postgres" id="Patch_Datamodel_Configuration_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.37" name="Datamodel GSDM Postgres" id="Patch_Datamodel_GSDM_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.37" name="Datamodel VDDB Postgres" id="Patch_Datamodel_VDDB_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.36" name="Datamodel Meta Model Postgres" id="Patch_Datamodel_Meta_Model_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.35" name="Datamodel Workflow Postgres" id="Patch_Datamodel_Workflow_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.35" name="Datamodel GoldenSource Objects Postgres" id="Patch_Datamodel_GoldenSource_Objects_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.35" name="Datamodel DataWarehouse Postgres" id="Patch_Datamodel_DataWarehouse_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.29" name="Datamodel DataWarehouse Standalone GSDM Postgres" id="Patch_Datamodel_DataWarehouse_Standalone_GSDM_Postgres" optional="true" type="patch"/>
+	<Package version="8.8.1.31" name="Datamodel Exception Management Postgres" id="Patch_Datamodel_Exception_Management_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.09" name="Datamodel Logging Postgres" id="Patch_Datamodel_Logging_Postgres" optional="false" type="patch"/>
+	<!-- Startersets -->
+	<Package version="8.8.1.01" name="Starterset Base Configuration" id="Full_Starterset_Base_Configuration" optional="false" type="full"/>
+	<Package version="8.8.1.34" name="Starterset DataWarehouse" id="Full_Starterset_DataWarehouse" optional="false" type="full"/>
+	<Package version="8.8.1.35" name="Starterset Exception Management" id="Full_Starterset_Exception_Management" optional="false" type="full"/>
+	<Package version="8.8.1.37" name="Starterset GSDM VDDB" id="Full_Starterset_GSDM_VDDB" optional="false" type="full"/>
+	<Package version="8.8.1.30" name="Starterset Reference Configuration" id="Full_Starterset_Reference_Configuration" optional="false" type="full"/>
+	<Package version="8.8.1.30" name="Starterset Reference Configuration" id="Full_Starterset_Reference_Configuration" optional="false" type="full"/>
+	<Package version="8.8.1.34" name="Starterset Reference DataWarehouse" id="Full_Starterset_Reference_DataWarehouse" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Starterset Reference Processing" id="Full_Starterset_Reference_Processing" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Starterset Rules" id="Full_Starterset_Rules" optional="false" type="full"/>
+	<Package version="8.8.1.35" name="Starterset GoldenSource Objects" id="Full_Starterset_GoldenSource_Objects" optional="false" type="full"/>
+	<Package version="8.8.1.33" name="Starterset Warehouse GoldenSource Objects" id="Full_Starterset_Warehouse_GoldenSource_Objects" optional="false" type="full"/>
+	<Package version="8.8.1.30" name="Starterset Market Data Solution" id="Full_Starterset_Market_Data_Solution" optional="false" type="full"/>	
+	<Package version="8.8.1.27" name="Starterset Risk Master" id="Full_Starterset_Risk_Master" optional="false" type="full"/>
+	<!-- Datawarehouse -->
+	<Package version="8.8.1.17" name="DataWarehouse Activities" id="Full_DataWarehouse_Activities" optional="false" type="full"/>
+	<!-- Engine Binary packages -->
+	<Package version="8.8.1.04" name="Base Components Linux Oracle19c" id="Full_Base_Components_Linux_Oracle19c" optional="false" type="full"/>
+	<Package version="8.8.1.09" name="Base Components Windows Oracle19c for Eclipse" id="Full_Base_Components_Windows_Oracle19c_for_Eclipse" optional="false" type="full"/>
+	<Package version="8.8.1.07" name="Message Translator Linux Oracle19c" id="Full_Message_Translator_Linux_Oracle19c" optional="false" type="full"/>
+	<Package version="8.8.1.19" name="Message Translator Windows Oracle19c for Eclipse" id="Full_Message_Translator_Windows_Oracle19c_for_Eclipse" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Benchmark Linux Oracle19c" id="Full_Benchmark_Linux_Oracle19c" optional="false" type="full"/>
+	<Package version="8.8.1.08" name="Reference Engine Linux Oracle19c" id="Full_Reference_Engine_Linux_Oracle19c" optional="false" type="full"/>
+	<!-- Engine Binary packages Postgres -->
+	<Package version="8.8.1.04" name="Base Components Linux ODBC" id="Full_Base_Components_Linux_ODBC" optional="false" type="full"/>
+	<Package version="8.8.1.07" name="Message Translator Linux ODBC" id="Full_Message_Translator_Linux_ODBC" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Benchmark Linux ODBC" id="Full_Benchmark_Linux_ODBC" optional="false" type="full"/>
+	<Package version="8.8.1.08" name="Reference Engine Linux ODBC" id="Full_Reference_Engine_Linux_ODBC" optional="false" type="full"/>
+	
+	<Package version="8.8.1.05" name="Base Components Windows ODBC for Eclipse" id="Full_Base_Components_Windows_ODBC_for_Eclipse" optional="false" type="full"/>
+	<Package version="8.8.1.19" name="Message Translator Windows ODBC for Eclipse" id="Full_Message_Translator_Windows_ODBC_for_Eclipse" optional="false" type="full"/>
+	
+	<Package version="8.8.1.01" name="Benchmark Configuration" id="Full_Benchmark_Configuration" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Business Entity Translator Linux Oracle" id="Full_Business_Entity_Translator_Linux_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Business Entity Translator Windows Oracle" id="Full_Business_Entity_Translator_Windows_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.19" name="Command Line Tools" id="Full_Command_Line_Tools" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="Extension Table Developer Linux Oracle" id="Full_Extension_Table_Developer_Linux_Oracle" optional="false" type="full"/>	
+	<Package version="8.8.1.11" name="Database Wrapper" id="Full_Database_Wrapper" optional="false" type="full"/>
+	<Package version="8.8.1.11" name="Installation Scenarios" id="Full_Installation_Scenarios" optional="false" type="full"/>
+	<Package version="8.8.1.10" name="Mapping Designer" id="Full_Mapping_Designer" optional="false" type="full"/>
+	<Package version="8.8.1.11" name="GoldenSource Objects Designer" id="Full_GoldenSource_Objects_Designer" optional="false" type="full"/>
+	<Package version="8.8.1.29" name="Orchestrator" id="Full_Orchestrator" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="Orchestrator Activity Samples" id="Full_Orchestrator_Activity_Samples" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="Orchestrator Client Libraries" id="Full_Orchestrator_Client_Libraries" optional="false" type="full"/>
+	<Package version="8.8.1.02" name="Orchestrator Engine Installer" id="Full_Orchestrator_Engine_Installer" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="Publishing Migration Toolkit" id="Full_Publishing_Migration_Toolkit" optional="true" type="full"/>
+	<Package version="8.8.1.23" name="Reference Engine Default Configuration" id="Full_Reference_Engine_Default_Configuration" optional="false" type="full"/>
+	<Package version="8.8.1.15" name="Reference Plugin" id="Full_Reference_Plugin" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="Reuters DSOS Extract Application" id="Full_Reuters_DSOS_Extract_Application" optional="true" type="full"/>
+	<Package version="8.8.1.12" name="Rules Adapter Linux Oracle" id="Full_Rules_Adapter_Linux_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.12" name="Rules Adapter Linux ODBC" id="Full_Rules_Adapter_Linux_ODBC" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="Securities GoldenSource Objects" id="Full_Securities_GoldenSource_Objects" optional="true" type="full"/>
+	<Package version="8.8.1.22" name="Securities GoldenSource Objects" id="Patch_Securities_GoldenSource_Objects" optional="true" type="patch"/>
+
+	<Package version="8.8.1.07" name="GoldenSource Objects Datawarehouse" id="Full_GoldenSource_Objects_Datawarehouse" optional="true" type="full"/>
+	<Package version="8.8.1.13" name="GoldenSource Objects Datawarehouse" id="Patch_GoldenSource_Objects_Datawarehouse" optional="true" type="patch"/>
+	<Package version="8.8.1.07" name="GoldenSource Objects Securities Datawarehouse Addon" id="Full_GoldenSource_Objects_Securities_Datawarehouse_Addon" optional="true" type="full"/>
+	<Package version="8.8.1.13" name="GoldenSource Objects Securities Datawarehouse Addon" id="Patch_GoldenSource_Objects_Securities_Datawarehouse_Addon" optional="true" type="patch"/>
+	<Package version="8.8.1.18" name="GoldenSource Objects Services" id="Full_GoldenSource_Objects_Services" optional="true" type="full"/>
+	<!-- Workflows -->
+	<Package version="8.8.1.01" name="Benchmark Workflows" id="Full_Benchmark_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.27" name="Bloomberg Workflows" id="Full_Bloomberg_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Consolidated Asset Setup Workflows" id="Full_Consolidated_Asset_Setup_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="CoppClark Workflows" id="Full_CoppClark_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.17" name="DataWarehouse Workflows" id="Full_DataWarehouse_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.16" name="EMBS Workflows" id="Full_EMBS_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.27" name="Fitch Workflows" id="Full_Fitch_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Interactive Data Workflows" id="Full_Interactive_Data_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Markit Workflows" id="Full_Markit_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.28" name="Ratings Workflows" id="Full_Ratings_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.15" name="Reference Workflows" id="Full_Reference_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.26" name="Reuters Workflows" id="Full_Reuters_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="RIMES Workflows" id="Full_RIMES_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="RMDS Workflows" id="Full_RMDS_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.29" name="Standard Connection Workflows" id="Full_Standard_Connection_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.29" name="Standard Workflows" id="Full_Standard_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="Standard&amp;Poors Workflows" id="Full_SnP_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Telekurs Workflows" id="Full_Telekurs_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="WM Daten Workflows" id="Full_WM_Daten_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="BECRS Workflows" id="Full_BECRS_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Straight Through Processing Workflows" id="Full_Straight_Through_Processing_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="GLEIF Workflows" id="Full_GLEIF_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.10" name="Price Loader Workflows" id="Full_Price_Loader_Workflows" optional="false" type="full"/>
+	<!-- Newly Added Packages in 8.8 -->
+	<Package version="8.8.1.03" name="Bloomberg BVAL Workflows" id="Full_Bloomberg_BVAL_Workflows" optional="true" type="full"/>
+	<!-- Workstation package -->
+	<Package version="8.8.1.03" name="Workstation Framework" id="Full_Workstation_Framework" optional="true" type="full"/>
+	<!--
+	<Package version="8.8.1.01" name="Workstation Framework for Eclipse" id="Full_Workstation_Framework_for_Eclipse" optional="true" type="full"/>
+	-->
+	<Package version="8.8.1.01" name="Workstation Screens for Accounting" id="Full_Workstation_Screens_for_Accounting" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Workstation Screens for Benchmark" id="Full_Workstation_Screens_for_Benchmark" optional="true" type="full"/>
+	<Package version="8.8.1.02" name="Workstation Screens for Common" id="Full_Workstation_Screens_for_Common" optional="true" type="full"/>
+	<Package version="8.8.1.02" name="Workstation Screens for Customers" id="Full_Workstation_Screens_for_Customers" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Workstation Screens for Positions" id="Full_Workstation_Screens_for_Positions" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Workstation Screens for Securities" id="Full_Workstation_Screens_for_Securities" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Workstation Screens for Product Taxonomy" id="Full_Workstation_Screens_for_Product_Taxonomy" optional="true" type="full"/>
+	<Package version="8.8.1.18" name="Workstation Workflows" id="Full_Workstation_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.11" name="Workstation Screens for DataWarehouse" id="Full_Workstation_Screens_for_DataWarehouse" optional="true" type="full"/>
+
+	<!-- RM, MDS -->
+	<Package version="8.8.1.16" name="Pricing Plugin" id="Full_Pricing_Plugin" optional="false" type="full"/>
+	<Package version="8.8.1.12" name="Pricing Workflows" id="Full_Pricing_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.18" name="Utility Plugin" id="Full_Utility_Plugin" optional="false" type="full"/>
+	<Package version="8.8.1.14" name="Risk Master Plugin" id="Full_Risk_Master_Plugin" optional="false" type="full"/>
+	<Package version="8.8.1.14" name="Risk Master Workflows" id="Full_Risk_Master_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.02" name="Generic Rule Engine" id="Full_Generic_Rule_Engine" optional="false" type="full"/>
+	<Package version="8.8.1.04" name="GoldenSource Objects Market Data" id="Full_GoldenSource_Objects_Market_Data" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="GoldenSource Objects Risk Master" id="Full_GoldenSource_Objects_Risk_Master" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="GoldenSource Objects Rules Execution" id="Full_GoldenSource_Objects_Rules_Execution" optional="true" type="full"/>
+	<Package version="8.8.1.28" name="Market Data Solution Screens" id="Full_Market_Data_Solution_Screens" optional="true" type="full"/>
+	<Package version="8.8.1.12" name="Risk Master Screens" id="Full_Risk_Master_Screens" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Market Data Solution Configuration Screens" id="Full_Market_Data_Solution_Configuration_Screens" optional="true" type="full"/>
+	<Package version="8.8.1.03" name="Pricing Workbench Configuration Screens" id="Full_Pricing_Workbench_Configuration_Screens" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Risk Master Configuration Screens" id="Full_Risk_Master_Configuration_Screens" optional="true" type="full"/>
+	
+	<Package version="8.8.1.20" name="Market Data Solution Configuration Screens" id="Patch_Market_Data_Solution_Configuration_Screens" optional="true" type="patch"/>
+	<Package version="8.8.1.21" name="Pricing Workbench Configuration Screens" id="Patch_Pricing_Workbench_Configuration_Screens" optional="true" type="patch"/>
+	<Package version="8.8.1.07" name="GoldenSource Objects Market Data" id="Patch_GoldenSource_Objects_Market_Data" optional="true" type="patch"/>
+	<Package version="8.8.1.10" name="Risk Master Configuration Screens" id="Patch_Risk_Master_Configuration_Screens" optional="true" type="patch"/>
+	<!-- As per Surabhi request
+	<Package version="8.8.1.01" name="Market Data Solution Workflows" id="Full_Market_Data_Solution_Workflows" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="GoldenSource Objects Quant Lib" id="Full_GoldenSource_Objects_Quant_Lib" optional="true" type="full"/>
+	-->
+	<!--
+	-->
+	<!-- SwiftOutbound -->
+	<!--
+	<Package version="8.8.0.001" name="SwiftOutbound Plugin" id="Full_SwiftOutbound_Plugin" optional="false" type="full"/>
+	<Package version="8.8.0.001" name="SwiftOutbound Workflows" id="Full_SwiftOutbound_Workflows" optional="true" type="full"/>
+	<Package version="8.8.0.001" name="Trace Integration-SWIFT Outbound" id="Full_Trace_Integration-SWIFT_Outbound" optional="true" type="full"/>
+	<Package version="8.8.0.001" name="Corporate Action Business Entities" id="Full_Corporate_Action_Business_Entities" optional="false" type="full"/>
+	-->
+	<!--Patches -->	
+	<Package version="8.8.1.09" name="Base Components Linux Oracle19c" id="Patch_Base_Components_Linux_Oracle19c" optional="false" type="patch"/>
+	<Package version="8.8.1.19" name="Message Translator Linux Oracle19c" id="Patch_Message_Translator_Linux_Oracle19c" optional="false" type="patch"/>
+	<Package version="8.8.1.23" name="Reference Engine Linux Oracle19c" id="Patch_Reference_Engine_Linux_Oracle19c" optional="false" type="patch"/>
+	
+	<Package version="8.8.1.09" name="Base Components Linux ODBC" id="Patch_Base_Components_Linux_ODBC" optional="false" type="patch"/>
+	<Package version="8.8.1.19" name="Message Translator Linux ODBC" id="Patch_Message_Translator_Linux_ODBC" optional="false" type="patch"/>
+	<Package version="8.8.1.23" name="Reference Engine Linux ODBC" id="Patch_Reference_Engine_Linux_ODBC" optional="false" type="patch"/>
+
+	<Package version="8.8.1.22" name="Workstation Framework" id="Patch_Workstation_Framework" optional="true" type="patch"/>
+	<Package version="8.8.1.22" name="Workstation Screens for Common" id="Patch_Workstation_Screens_for_Common" optional="true" type="patch"/>
+	<Package version="8.8.1.22" name="Workstation Screens for Customers" id="Patch_Workstation_Screens_for_Customers" optional="true" type="patch"/>
+	<Package version="8.8.1.22" name="Workstation Screens for Securities" id="Patch_Workstation_Screens_for_Securities" optional="true" type="patch"/>
+	<Package version="8.8.1.05" name="Workstation Screens for Benchmark" id="Patch_Workstation_Screens_for_Benchmark" optional="true" type="patch"/>
+	<Package version="8.8.1.05" name="Workstation Screens for Positions" id="Patch_Workstation_Screens_for_Positions" optional="true" type="patch"/>
+	<Package version="8.8.1.07" name="Workstation Screens for Product Taxonomy" id="Patch_Workstation_Screens_for_Product_Taxonomy" optional="true" type="patch"/>
+	
+	<!-- EDMA Packages -->
+	<Package version="8.8.1.03" name="EDMA UI" id="Full_EDMA_UI" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="EDMA Framework" id="Full_EDMA_Framework" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="EDMA Workflows" id="Full_EDMA_Workflows" optional="false" type="full"/>
+	<Package version="8.8.1.01" name="EDMA Datamodel Oracle" id="Full_EDMA_Datamodel_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="EDMA Datamodel Oracle" id="Patch_EDMA_Datamodel_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.01" name="EDMA Platform Test Cases Oracle" id="Full_EDMA_Platform_Test_Cases_Oracle" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="EDMA Platform Test Cases Oracle" id="Patch_EDMA_Platform_Test_Cases_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.01" name="EDMA Platform Datamodel Oracle" id="Full_EDMA_Platform_Datamodel_Oracle" optional="false" type="full"/>
+	<!--
+	<Package version="8.8.1.01" name="EDMA Platform Datamodel Oracle" id="Patch_EDMA_Platform_Datamodel_Oracle" optional="false" type="patch"/>
+	<Package version="8.8.1.01" name="EDMA Platform Datamodel Postgres" id="Patch_EDMA_Platform_Datamodel_Postgres" optional="false" type="patch"/>
+	-->
+	<Package version="8.8.1.01" name="EDMA Datamodel Postgres" id="Full_EDMA_Datamodel_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="EDMA Datamodel Postgres" id="Patch_EDMA_Datamodel_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.01" name="EDMA Platform Test Cases Postgres" id="Full_EDMA_Platform_Test_Cases_Postgres" optional="false" type="full"/>
+	<Package version="8.8.1.03" name="EDMA Platform Test Cases Postgres" id="Patch_EDMA_Platform_Test_Cases_Postgres" optional="false" type="patch"/>
+	<Package version="8.8.1.01" name="EDMA Platform Datamodel Postgres" id="Full_EDMA_Platform_Datamodel_Postgres" optional="false" type="full"/>
+	
+	<!-- Only in Baselines, Not in Scenario -->
+	<Package version="8.8.1.13" name="Orchestrator UI" id="Full_Orchestrator_UI" optional="false" type="full"/>
+	<Package version="8.8.1.12" name="GSO Mapper" id="Full_GSO_Mapper" optional="false" type="full"/>
+	<Package version="8.8.1.10" name="GoldenSource Workbench x64" id="Full_GoldenSource_Workbench_x64" optional="true" type="full"/>
+	<Package version="8.8.1.04" name="Extension Table Developer" id="Full_Extension_Table_Developer" optional="true" type="full"/>
+	<Package version="8.8.1.20" name="Installation Studio" id="Full_Installation_Studio" optional="true" type="full"/>
+	<Package version="2022.07.27.0" name="DELTA - Deployment Enhancement Tool and Automation" id="Full_DELTA_-_Deployment_Enhancement_Tool_and_Automation" optional="true" type="full"/>
+	<Package version="8.8.1.21" name="Reference Engine SingleListing Configuration" id="Full_Reference_Engine_SingleListing_Configuration" optional="true" type="full"/>
+	<Package version="8.8.1.12" name="GEM - GoldenSource Environment Manager" id="Full_GEM_-_GoldenSource_Environment_Manager" optional="true" type="full"/>
+	<!-- Connections Base -->
+	<Package version="8.8.1.05" name="Bloomberg Base" id="Full_Bloomberg_Base" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Interactive Data Base" id="Full_Interactive_Data_Base" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Telekurs Base" id="Full_Telekurs_Base" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="S&amp;P ISIDPlus db Base" id="Full_StandardnPoors_ISIDPlus_db_Base" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Fitch Base" id="Full_Fitch_Base" optional="true" type="full"/>
+	<Package version="8.8.1.01" name="Connection Version" id="Full_Connection_Version" optional="true" type="full"/>
+	<!-- 8.99 -->
+	<Package version="8.99.78.0" name="Connection Base" id="Full_Connection_Base" optional="true" type="full"/>
+	<Package version="8.99.61.0" name="Corporate Action ISO 15022 Common" id="Full_Corporate_Action_ISO_15022_Common" optional="true" type="full"/>
+	<Package version="8.99.28.0" name="GSFD-ISO10383 Markets" id="Full_GSFD-ISO10383_Markets" optional="true" type="full"/>
+	<Package version="8.99.8.0" name="Global Legal Entity Identifier Foundation LEI" id="Full_Global_Legal_Entity_Identifier_Foundation_LEI" optional="true" type="full"/>
+	<Package version="8.99.46.0" name="Bloomberg DL Credit Risk" id="Full_Bloomberg_DL_Credit_Risk" optional="true" type="full"/>
+	<Package version="8.99.15.0" name="BB BO 3rdP Security Ratings-DBRS" id="Full_BB_BO_3rdP_Security_Ratings-DBRS" optional="true" type="full"/>
+	<Package version="8.99.26.0" name="BB BO 3rdP Security Ratings-Fitch" id="Full_BB_BO_3rdP_Security_Ratings-Fitch" optional="true" type="full"/>
+	<Package version="8.99.24.0" name="BB BO 3rdP Security Ratings-Moodys" id="Full_BB_BO_3rdP_Security_Ratings-Moodys" optional="true" type="full"/>
+	<Package version="8.99.28.0" name="BB BO 3rdP Security Ratings-S&amp;P" id="Full_BB_BO_3rdP_Security_Ratings-S&amp;P" optional="true" type="full"/>
+	<Package version="8.99.69.0" name="Bloomberg DL CMO Whole Loans CMBS" id="Full_Bloomberg_DL_CMO_Whole_Loans_CMBS" optional="true" type="full"/>
+	<Package version="8.99.45.0" name="Bloomberg DL Corporate Actions" id="Full_Bloomberg_DL_Corporate_Actions" optional="true" type="full"/>
+	<Package version="8.99.37.0" name="Bloomberg DL Currencies" id="Full_Bloomberg_DL_Currencies" optional="true" type="full"/>
+	<Package version="8.99.79.0" name="Bloomberg DL End of Day Pricing" id="Full_Bloomberg_DL_End_of_Day_Pricing" optional="true" type="full"/>
+	<Package version="8.99.26.0" name="Bloomberg-Common" id="Full_Bloomberg-Common" optional="true" type="full"/>
+	<Package version="8.99.10.0" name="Bloomberg DL Equity Listed Futures" id="Full_Bloomberg_DL_Equity_Listed_Futures" optional="true" type="full"/>
+	<Package version="8.99.8.0" name="Bloomberg DL Equity Listed Options" id="Full_Bloomberg_DL_Equity_Listed_Options" optional="true" type="full"/>
+	<Package version="8.99.60.0" name="Bloomberg DL Global Commodities and Commodity Options" id="Full_Bloomberg_DL_Global_Commodities_and_Commodity_Options" optional="true" type="full"/>
+	<Package version="8.99.85.0" name="Bloomberg DL Global Equity" id="Full_Bloomberg_DL_Global_Equity" optional="true" type="full"/>
+	<Package version="8.99.8.0" name="Bloomberg DL Non-Equity Listed Options" id="Full_Bloomberg_DL_Non-Equity_Listed_Options" optional="true" type="full"/>
+	<Package version="8.99.22.0" name="Domains as Service" id="Full_Domains_as_Service" optional="true" type="full"/>
+	<Package version="8.99.34.0" name="Bloomberg DL Money Market" id="Full_Bloomberg_DL_Money_Market" optional="true" type="full"/>
+	<Package version="8.99.25.0" name="Fitch RDS History" id="Full_Fitch_RDS_History" optional="true" type="full"/>
+	<Package version="8.99.35.0" name="Fitch RDS Issue Ratings" id="Full_Fitch_RDS_Issue_Ratings" optional="true" type="full"/>
+	<Package version="8.99.31.0" name="Fitch RDS Issuer Ratings" id="Full_Fitch_RDS_Issuer_Ratings" optional="true" type="full"/>
+	<Package version="8.99.31.0" name="Moodys RDS Organization" id="Full_Moodys_RDS_Organization" optional="true" type="full"/>
+	<Package version="8.99.36.0" name="Moodys RDS Instrument" id="Full_Moodys_RDS_Instrument" optional="true" type="full"/>
+	<Package version="8.99.24.0" name="S&amp;P XF - Entity Ratings" id="Full_S&amp;P_XF_Entity_Ratings" optional="true" type="full"/>
+	<Package version="8.99.29.0" name="S&amp;P XF - Security Ratings" id="Full_S&amp;P_XF_Security_Ratings" optional="true" type="full"/>
+	<Package version="8.99.16.0" name="S&amp;P XF - BECRS" id="Full_S&amp;P_XF_BECRS" optional="true" type="full"/>
+	<Package version="8.99.12.0" name="S&amp;P XF - Foundation" id="Full_S&amp;P_XF_Foundation" optional="true" type="full"/>
+	<Package version="8.99.47.0" name="Bloomberg DL Global Equity Options" id="Full_Bloomberg_DL_Global_Equity_Options" optional="true" type="full"/>
+	<Package version="8.99.42.0" name="Bloomberg DL Global Index" id="Full_Bloomberg_DL_Global_Index" optional="true" type="full"/>
+	<Package version="8.99.64.0" name="Bloomberg DL Global Municipals" id="Full_Bloomberg_DL_Global_Municipals" optional="true" type="full"/>
+	<Package version="8.99.72.0" name="Bloomberg DL Global Mutual Funds" id="Full_Bloomberg_DL_Global_Mutual_Funds" optional="true" type="full"/>
+	<Package version="8.99.74.0" name="Bloomberg DL Global Preferred" id="Full_Bloomberg_DL_Global_Preferred" optional="true" type="full"/>
+	<Package version="8.99.59.0" name="Bloomberg DL Global Warrants" id="Full_Bloomberg_DL_Global_Warrants" optional="true" type="full"/>
+	<Package version="8.99.56.0" name="Bloomberg DL Mortgage Pools" id="Full_Bloomberg_DL_Mortgage_Pools" optional="true" type="full"/>
+	<Package version="8.99.34.0" name="Bloomberg DL PreMarket Equity" id="Full_Bloomberg_DL_PreMarket_Equity" optional="true" type="full"/>
+	<Package version="8.99.24.0" name="Bloomberg DL Global Equity MiFID" id="Full_Bloomberg_DL_Global_Equity_MiFID" optional="true" type="full"/>
+	<Package version="8.99.101.0" name="Bloomberg DL Corp Gov Conv" id="Full_Bloomberg_DL_Corp_Gov_Conv" optional="true" type="full"/>
+	<Package version="8.99.17.0" name="Bloomberg EXT End of Day Pricing" id="Full_Bloomberg_EXT_End_of_Day_Pricing" optional="true" type="full"/>
+	<Package version="8.99.24.0" name="Bloomberg EXT Equity Descriptive" id="Full_Bloomberg_EXT_Equity_Descriptive" optional="true" type="full"/>
+	<Package version="8.99.47.0" name="Bloomberg EXT Fixed Income Descriptive and Bulk" id="Full_Bloomberg_EXT_Fixed_Income_Descriptive_and_Bulk" optional="true" type="full"/>
+	<Package version="8.99.23.0" name="Bloomberg EXT Fixed Income Preferred Descriptive" id="Full_Bloomberg_EXT_Fixed_Income_Preferred_Descriptive" optional="true" type="full"/>
+	<Package version="8.99.28.0" name="Bloomberg EXT High Quality Liquid Assets" id="Full_Bloomberg_EXT_High_Quality_Liquid_Assets" optional="true" type="full"/>
+	<Package version="8.99.51.0" name="Bloomberg Per Security" id="Full_Bloomberg_Per_Security" optional="true" type="full"/>
+	<Package version="8.99.30.0" name="Interactive Data pricing" id="Full_Interactive_Data_FTS_pricing" optional="true" type="full"/>
+	<Package version="8.99.110.0" name="Interactive Data descriptive" id="Full_Interactive_Data_FTS_descriptive" optional="true" type="full"/>
+	<Package version="8.99.36.0" name="Interactive Data IDC ISO15022" id="Full_Interactive_Data_IDC_ISO15022" optional="true" type="full"/>
+	<Package version="8.99.32.0" name="Markit RED" id="Full_Markit_RED" optional="true" type="full"/>
+	<Package version="8.99.17.0" name="Markit CDS" id="Full_Markit_CDS" optional="true" type="full"/>
+	<Package version="8.99.19.0" name="Reuters Corporate Action" id="Full_Reuters_Corporate_Action" optional="true" type="full"/>
+	<Package version="8.99.94.0" name="Reuters DataScope Equity Descriptive" id="Full_Reuters_DataScope_Equity_Descriptive" optional="true" type="full"/>
+	<Package version="8.99.63.0" name="Reuters DataScope Fixed Income Descriptive" id="Full_Reuters_DataScope_Fixed_Income_Descriptive" optional="true" type="full"/>
+	<Package version="8.99.19.0" name="Reuters DataScope Select Symbol Cross Reference" id="Full_Reuters_DataScope_Select_Symbol_Cross_Reference" optional="true" type="full"/>
+	<Package version="8.99.35.0" name="Reuters DataScope Select End of Day Pricing" id="Full_Reuters_DataScope_Select_End_of_Day_Pricing" optional="true" type="full"/>
+	<Package version="8.99.58.0" name="Reuters DataScope Select Terms and Conditions" id="Full_Reuters_DataScope_Select_Terms_and_Conditions" optional="true" type="full"/>
+	<Package version="8.99.29.0" name="Reuters DataScope Equity Pricing" id="Full_Reuters_DataScope_Equity_Pricing" optional="true" type="full"/>
+	<Package version="8.99.29.0" name="Reuters DataScope Fixed Income Pricing" id="Full_Reuters_DataScope_Fixed_Income_Pricing" optional="true" type="full"/>
+	<Package version="8.99.24.0" name="Reuters DataScope Select IntraDay Pricing" id="Full_Reuters_DataScope_Select_IntraDay_Pricing" optional="true" type="full"/>
+	<Package version="8.99.27.0" name="Reuters DataScope Select Bond Schedules" id="Full_Reuters_DataScope_Select_Bond_Schedules" optional="true" type="full"/>
+	<Package version="8.99.31.0" name="Reuters DataScope OnSite CMO ABS" id="Full_Reuters_DataScope_OnSite_CMO_ABS" optional="true" type="full"/>
+	<Package version="8.99.41.0" name="Reuters DataScope OnSite Government Corporate" id="Full_Reuters_DataScope_OnSite_Government_Corporate" optional="true" type="full"/>
+	<Package version="8.99.19.0" name="Reuters DataScope OnSite Mortgages" id="Full_Reuters_DataScope_OnSite_Mortgages" optional="true" type="full"/>
+	<Package version="8.99.35.0" name="Thomson Reuters DataScope ISO 15022" id="Full_Thomson_Reuters_DataScope_ISO_15022" optional="true" type="full"/>
+	<Package version="8.99.43.0" name="S&amp;P CUSIP db" id="Full_StandardnPoors_CUSIP_db" optional="true" type="full"/>
+	<Package version="8.99.44.0" name="S&amp;P SDM Municipal Bond Information Service" id="Full_S&amp;P_SDM_Municipal_Bond_Information_Service" optional="true" type="full"/>
+	<Package version="8.99.20.0" name="Swaps Monitor Financial Calendar" id="Full_Swaps_Monitor_Financial_Calendar" optional="true" type="full"/>
+	<Package version="8.99.19.0" name="SWIFT Corporate Action Narrative" id="Full_SWIFT_Corporate_Action_Narrative" optional="true" type="full"/>
+	<Package version="8.99.38.0" name="SWIFT Corporate Action Notifications" id="Full_SWIFT_Corporate_Action_Notifications" optional="true" type="full"/>
+	<Package version="8.99.31.0" name="Telekurs D Corporate Action Data - ISO 15022" id="Full_Telekurs_D_Corporate_Action_Data_-_ISO_15022" optional="true" type="full"/>
+	<Package version="8.99.29.0" name="Telekurs Valordata Feed Common Package" id="Full_Telekurs_Valordata_Feed_Common_Package" optional="true" type="full"/>
+	<Package version="8.99.10.0" name="Universe Maintenance" id="Full_Universe_Maintenance" optional="true" type="full"/>
+	<Package version="8.99.9.0" name="WM EDDY" id="Full_WM_EDDY" optional="true" type="full"/>
+	<Package version="8.99.10.0" name="WM GAT" id="Full_WM_GAT" optional="true" type="full"/>
+	<Package version="8.99.5.0" name="WM Common" id="Full_WM_Common" optional="true" type="full"/>
+	<Package version="8.99.13.0" name="eMBS Pool DB additional set" id="Full_eMBS_Pool_DB_additional_set" optional="true" type="full"/>
+	<Package version="8.99.35.0" name="eMBS Pool DB common set" id="Full_eMBS_Pool_DB_common_set" optional="true" type="full"/>
+	<Package version="8.99.24.0" name="Bloomberg DL Transaction Tax" id="Full_Bloomberg_DL_Transaction_Tax" optional="true" type="full"/>
+	<Package version="8.99.21.0" name="Reuters DataScope FATCA" id="Full_Reuters_DataScope_FATCA" optional="true" type="full"/>
+	<Package version="8.99.29.0" name="Bloomberg DL Global Certificates" id="Full_Bloomberg_DL_Global_Certificates" optional="true" type="full"/>
+	<Package version="8.99.16.0" name="Copp Clark-Common" id="Full_Copp_Clark-Common" optional="true" type="full"/>
+	<Package version="8.99.22.0" name="Copp Clark Holiday Reference Data" id="Full_Copp_Clark_Holiday_Reference_Data" optional="true" type="full"/>
+	<Package version="8.99.15.0" name="Interactive Data-Common" id="Full_Interactive_Data-Common" optional="true" type="full"/>
+	<Package version="8.99.15.0" name="ICE Apex Descriptive" id="Full_ICE_Apex_Descriptive" optional="true" type="full"/>
+	<Package version="8.99.4.0" name="ICE Apex Evaluated Pricing" id="Full_ICE_Apex_Evaluated_Pricing" optional="true" type="full"/>
+	<Package version="8.99.20.0" name="Reuters-Common" id="Full_Reuters-Common" optional="true" type="full"/>
+	<Package version="8.99.17.0" name="Swaps Monitor-Common" id="Full_Swaps_Monitor-Common" optional="true" type="full"/>
+	<Package version="8.99.21.0" name="SIX VDF-Common" id="Full_SIX_VDF-Common" optional="true" type="full"/>
+	<Package version="8.99.13.0" name="S&amp;P ISIDPlus db-Common" id="Full_S&amp;P_ISIDPlus_db-Common" optional="true" type="full"/>
+	<Package version="8.99.5.0" name="Rating Values as Service" id="Full_Rating_Values_as_Service" optional="true" type="full"/>
+	<Package version="8.99.5.0" name="GLEIF ISIN-to-LEI" id="Full_GLEIF_ISIN-to-LEI" optional="true" type="full"/>
+	<Package version="8.99.6.0" name="Reuters DataScope Plus MiFIDII" id="Full_Reuters_DataScope_Plus_MiFIDII" optional="true" type="full"/>
+	<!-- New Package in Baseline 002 -->
+	<Package version="8.99.7.0" name="Bloomberg DL Corporate Actions V2" id="Full_Bloomberg_DL_Corporate_Actions_V2" optional="true" type="full"/>
+	<Package version="8.99.7.0" name="ICE Apex Basic Bond Evaluation" id="Full_ICE_Apex_Basic_Bond_Evaluation" optional="true" type="full"/>
+	<Package version="8.99.2.0" name="ICE Apex Options" id="Full_ICE_Apex_Options" optional="true" type="full"/>
+	<Package version="8.99.2.0" name="Bloomberg DL BVAL Infrastructure" id="Full_Bloomberg_DL_BVAL_Infrastructure" optional="true" type="full"/>
+	<Package version="8.99.8.0" name="Bloomberg DL Additional Fieldset Corp Govt Conv" id="Full_Bloomberg_DL_Additional_Fieldset_Corp_Govt_Conv" optional="true" type="full"/>
+	<Package version="8.99.4.0" name="BB DL Additional Fieldset - Credit Risk" id="Full_BB_DL_Additional_Fieldset_Credit_Risk" optional="true" type="full"/>
+	<Package version="8.99.7.0" name="BB DL BO 3rdP Corporate Structure Ratings - Fitch V2" id="Full_BB_DL_BO_3rdP_Corporate_Structure_Ratings_Fitch_V2" optional="true" type="full"/>
+	<Package version="8.99.6.0" name="BB DL BO 3rdP Corporate Structure Ratings - Moodys" id="Full_BB_DL_BO_3rdP_Corporate_Structure_Ratings_Moodys" optional="true" type="full"/>
+	<Package version="8.99.5.0" name="BB DL BO 3rdP Corporate Structure Ratings - S&amp;P" id="Full_BB_DL_BO_3rdP_Corporate_Structure_Ratings_S&amp;P" optional="true" type="full"/>
+	<Package version="8.99.7.0" name="Bloomberg DL Additional Fieldset Mortgage Non Pool" id="Full_Bloomberg_DL_Additional_Fieldset_Mortgage_Non_Pool" optional="true" type="full"/>
+	<Package version="8.99.3.0" name="Bloomberg DL MiFIR Transparency - Equity" id="Full_Bloomberg_DL_MiFIR_Transparency_Equity" optional="true" type="full"/>
+	<Package version="8.99.6.0" name="Bloomberg DL MiFIR Transparency - Fixed Income" id="Full_Bloomberg_DL_MiFIR_Transparency_Fixed_Income" optional="true" type="full"/>
+	<Package version="8.99.3.0" name="Bloomberg DL MiFIR Transparency - Futures and Options" id="Full_Bloomberg_DL_MiFIR_Transparency_Futures_and_Options" optional="true" type="full"/>
+	<Package version="8.99.5.0" name="Bloomberg DL Simplified Supervisory Formula Approach" id="Full_Bloomberg_DL_Simplified_Supervisory_Formula_Approach" optional="true" type="full"/>
+	<Package version="8.99.2.0" name="Universe Maintenance - Entities" id="Full_Universe_Maintenance_-_Entities" optional="true" type="full"/>
+	<!-- New Package in Baseline 003 -->
+	<Package version="8.99.6.0" name="Bloomberg DL Global Municipals V2" id="Full_Bloomberg_DL_Global_Municipals_V2" optional="true" type="full"/><!-- New Package in Baseline 003 -->
+	<!-- New Packages in Baseline 005 -->
+	<Package version="8.99.4.0" name="ICE Apex EOD Listed Pricing" id="Full_ICE_Apex_EOD_Listed_Pricing" optional="true" type="full"/>
+	<Package version="8.99.6.0" name="Bloomberg DL Credit Risk V2" id="Full_Bloomberg_DL_Credit_Risk_V2" optional="true" type="full"/>
+	<!-- Added in 8.8.1.02 Baseline -->
+	<Package version="8.99.5.0" name="Bloomberg DL Additional Fieldset Equity" id="Full_Bloomberg_DL_Additional_Fieldset_Equity" optional="true" type="full"/>
+	<Package version="8.99.2.0" name="Bloomberg DL CINS" id="Full_Bloomberg_DL_CINS" optional="true" type="full"/>
+	<Package version="8.99.4.0" name="Bloomberg DL GICS" id="Full_Bloomberg_DL_GICS" optional="true" type="full"/>
+	<!-- 8.8.1.10 Baseline -->
+	<Package version="8.99.3.0" name="DBRS RatingsNow - Security and Issuer Ratings" id="Full_DBRS_RatingsNow_-_Security_and_Issuer_Ratings" optional="true" type="full"/>
+</PackageList>

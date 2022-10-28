@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation>
+            <title>Scenario Definition</title>
+            <description>The Scenario Definition defines an installation scenario for Installation Center. 
+            It defines which Installation Center Repository should be used for setup (InstallationRepository),
+            where the packages should be installed to (Destinations),
+            and it specifies the package installation sequence as well as the mapping of certain properties (Installation).
+            </description>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="Scenario">
+        <xsd:annotation>
+            <xsd:documentation>This is the root element of the Scenario Defnition.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="InstallationRepository" type="IC_REPOSITORY"/>
+                <xsd:element name="Destinations" type="DESTINATIONS"/>
+                <xsd:element name="Installation" type="INSTALLATION"/>
+                <xsd:element name="SupplementalPackages" type="SUPPLEMENTALPACKAGES" minOccurs="0"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" type="xsd:string" use="required">
+                <xsd:annotation>
+                    <xsd:documentation>The unique identifier of the Scenario Definition. The id is used by the Scenario Installation Wizard as file name suffix for generated files (e.g. log files) and therefore should not contain blanks and other characters prohibited in file names for the different OS (Linux, Sun Solaris, Windows).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="name" type="xsd:string" use="required">
+                <xsd:annotation>
+                    <xsd:documentation>The unique name of the Scenario Definition. The name can be considered as a meaningful, readable synonym for the id.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="desc" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>The detailed description of the Scenario Definition.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="version" type="xsd:string" use="required">
+                <xsd:annotation>
+                    <xsd:documentation>The version of the Scenario Definition.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="operatingsystem">
+                <xsd:annotation>
+                    <xsd:documentation>The target operating system the Scenario Definition was designed for.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">                    
+                        <xsd:enumeration value="Win32"/>
+                        <xsd:enumeration value="zLinux"/>
+                        <xsd:enumeration value="Linux"/>
+                        <xsd:enumeration value="SunOS"/>                        
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="database">
+                <xsd:annotation>
+                    <xsd:documentation>The target database type the Scenario Definition was designed for.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Oracle"/>
+                        <xsd:enumeration value="DB2"/>
+                        <xsd:enumeration value="DB2 for z/OS"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="IC_REPOSITORY">
+        <xsd:annotation>
+            <xsd:documentation>This element specifies the database connection to the Installation Center Repository.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="DataSource" type="DATASOURCE" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+        <xsd:attribute name="userId" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The userId specifies the schema name of the Installation Center Repository database and is an id reference to the database definition /RuntimeConfiguration/Database/username in the Runtime Configuraiton file.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="desc" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>The detailed description for the Installation Center Repository database connection.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="DESTINATIONS">
+        <xsd:annotation>
+            <xsd:documentation>This element specifies all the Installation Center Destinations needed for package installation.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="EngineDestination" type="DESTINATION">
+                <xsd:annotation>
+                    <xsd:documentation>This element specifies an Installation Center Destination of type 'EngineInstallation' and is used for installing packages with engine relevant content.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="DatabaseDestination" type="DATABASEDESTINATION">
+                <xsd:annotation>
+                    <xsd:documentation>This element specifies an Installation Center Destination of type 'Database' and is used for installing packages with database relevant content.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="DESTINATION">
+        <xsd:attribute name="name" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The unique name of the Installation Center Destination within the Scenario Definition. For DatabaseDestinations, this is an id reference to the database definition /RuntimeConfiguration/Database/username in the Runtime Configuraiton file.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="desc" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>The detailed description of the Installation Center Destination.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="DATABASEDESTINATION">
+        <xsd:complexContent>
+            <xsd:extension base="DESTINATION">
+                <xsd:sequence>
+                    <xsd:element name="DataSource" type="DATASOURCE" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="DATASOURCE">
+        <xsd:annotation>
+            <xsd:documentation>This element specifies a DataSource definition. The Installation Center Scenario Installation Wizard will create a DataSource definition template file for JBoss and Weblogic Application Servers out of this.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="name" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The name of the DataSource.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="jndi-name" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The JNDI name of the DataSource.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="minPool" type="xsd:integer" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The minimum size of the the DataSource's connection pool.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="maxPool" type="xsd:integer" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The maximum size of the the DataSource's connection pool.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="xa" type="xsd:boolean">
+            <xsd:annotation>
+                <xsd:documentation>Specifies whether this DataSource is an XA-DataSource.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="INSTALLATION">
+        <xsd:annotation>
+            <xsd:documentation>This element defines the package installation sequence.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="Package" type="INSTALL_PACKAGE"/>
+        </xsd:choice>
+        <xsd:attribute name="haltOnError" type="xsd:boolean" default="false">
+            <xsd:annotation>
+                <xsd:documentation>If 'true', the Scenario Installer will immediately stop on installation errors. If 'false', installation errors will not stop Scenario Installer and errors can be reviewed in the final installation report.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="downloadSiteFilter" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The Version Filter string to use for downloading packages from GoldenSource Download Site (e.g. '8.1.0'). This value can be overwritten in Runtime Configuration file by specifying /RuntimeConfiguration/PackagesLocation/DownloadSite/@filter. Minimum string length is 1.</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:minLength value="1"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="fileOutputEnabled" type="xsd:boolean" default="false">
+            <xsd:annotation>
+                <xsd:documentation>If 'true', tasks will be configured to write output files instead of being applied directly to their traget destination, i.e. tasks like sql, sqloperational, sqlstarterset, xmlsql and xmlmap will write DDL/SQL statements to a preconfigured file instead of executing them on the target database.</xsd:documentation>
+            </xsd:annotation>            
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="INSTALL_PACKAGE">
+        <xsd:annotation>
+            <xsd:documentation>This element defines a package to install.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="EngineLocation" type="ENGINE_LOC"/>
+            <xsd:element name="DatabaseLocation" type="DB_LOC"/>
+            <xsd:element name="PropertyMapping" type="PROPERTY_MAPPING"/>
+        </xsd:choice>
+        <xsd:attribute name="name" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The package name as defined in the PackageDescription.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="type" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The package type as defined in the PackageDescription.</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="full"/>
+                    <xsd:enumeration value="patch"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="version" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The package version as defined in the PackageDescription.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="build" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>The AntHill build number of the package zip file.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="force" type="xsd:boolean" default="false">
+            <xsd:annotation>
+                <xsd:documentation>If 'true', the package will be reinstalled on all destinations where it already has been installed. If 'false', the package will be skipped if it has already been installed on ALL destination or it will be partially installed on those destinations where it has not been installed yet.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="optional" type="xsd:boolean" default="false">
+            <xsd:annotation>
+                <xsd:documentation>If 'true', the package will be skipped if it cannot be found in the Repository for installation or if it requires a newer Installation Center version. If 'false', an exception will be thrown in the described situations.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="LOCATION" abstract="true">
+        <xsd:attribute name="name" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The name of the Installation Center Location. This is an id reference to a Destination defined under /Scenario/Destinations.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="forId" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>Specifies the Installation Center Location id as defined in the PackageDescription of the corresponding package. Use this attribute to explicitly map Locations (e.g. needed if a package requires more than one Location of the same type).</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="ENGINE_LOC">
+        <xsd:annotation>
+            <xsd:documentation>This element specifies a Installation Center Location of type 'EngineInstallation'.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="LOCATION">
+                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                    <xsd:element name="PropertyMapping" type="PROPERTY_MAPPING"/>
+                </xsd:choice>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="DB_LOC">
+        <xsd:annotation>
+            <xsd:documentation>This element specifies a Installation Center Location of type 'Database'.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="LOCATION">
+                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                    <xsd:element name="PropertyMapping" type="PROPERTY_MAPPING"/>
+                    <xsd:element name="TableSpaceVariable" type="TABLESPACE_VARIABLE"/>
+                    <xsd:element name="DatabaseVariable" type="DATABASE_VARIABLE"/>
+                </xsd:choice>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="ENVIRONMENTVARIABLE">
+        <xsd:attribute name="environmentVariableId" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The Installation Center Environment Varibale id as defined in the PackageDescription of the corresponding package.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="PROPERTY_MAPPING">
+        <xsd:annotation>
+            <xsd:documentation>This element allows to map the value of a /RuntimeConfiguration/Preferences/Property definition in the Runtime Configuration file to an Installation Center Enivronment Variable defined in the PackageDescrition of the corresponding package.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ENVIRONMENTVARIABLE">
+                <xsd:attribute name="property" type="xsd:string" use="required">
+                    <xsd:annotation>
+                        <xsd:documentation>This is an id reference to /RuntimeConfiguration/Preferences/Property/@name definition in the Runtime Configuration file.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="TABLESPACE_VARIABLE">
+        <xsd:annotation>
+            <xsd:documentation>This element allows to map the value of a /RuntimeConfiguration/Database/username/tablespaces/tablespace definition in the Runtime Configuration file to an Installation Center Enivronment Variable defined in the PackageDescrition of the corresponding package.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ENVIRONMENTVARIABLE">
+                <!-- Currently, Installation Center supports the following, pre-defined types:  TMP, DEFAULT, DATA_S, DATA_M, DATA_L, INDEX_S, INDEX_M, INDEX_L -->
+                <xsd:attribute name="tableSpaceId" type="xsd:string" use="required">
+                    <xsd:annotation>
+                        <xsd:documentation>This is an id reference to /RuntimeConfiguration/Database/username/tablespaces/tablespace/@type definition in the Runtime Configuration file.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="DATABASE_VARIABLE">
+        <xsd:annotation>
+            <xsd:documentation>This element allows to map a value of a /RuntimeConfiguration/Database definition in the Runtime Configuration file to an Installation Center Enivronment Variable defined in the PackageDescrition of the corresponding package.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ENVIRONMENTVARIABLE">
+                <xsd:attribute name="setting" use="required">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:enumeration value="type">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Type (Name): maps to /RuntimeConfiguration/Database/@type in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="host">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Server Host: maps to /RuntimeConfiguration/Database/@host in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="port">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Service Port: maps to /RuntimeConfiguration/Database/@port in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="service">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Service Name(SID): maps to /RuntimeConfiguration/Database/@service in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="url">
+                                <xsd:annotation>
+                                    <xsd:documentation>Maps to /RuntimeConfiguration/Database/@url in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="alias">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Alias: maps to /RuntimeConfiguration/Database/@alias in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="owner">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Owner: maps to /RuntimeConfiguration/Database/username/@owner in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="name">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Connection User Name (Schema Name): maps to /RuntimeConfiguration/Database/username/@username in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="password">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database Connection Password: maps to /RuntimeConfiguration/Database/username/@password in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="jndi">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database JNDI Name: maps to /RuntimeConfiguration/Database/username/@jndiName in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="system.name">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database System User Name: maps to /RuntimeConfiguration/Database/systemUser/@username in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                            <xsd:enumeration value="system.password">
+                                <xsd:annotation>
+                                    <xsd:documentation>Database System User Password: maps to /RuntimeConfiguration/Database/systemUser/@password in the Runtime Configuration file.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:enumeration>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="SUPPLEMENTALPACKAGES">
+        <xsd:annotation>
+            <xsd:documentation>This element defines supplemental packages wich do not need to be installed by Scenario Installer (e.g. tools packages like the Installation Center or Workbench package).</xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="Package" type="SUPPLEMENTAL_PACKAGE"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="SUPPLEMENTAL_PACKAGE">
+        <xsd:annotation>
+            <xsd:documentation>This element defines a supplemental package wich does not need to be installed by Scenario Installer(e.g. tools packages like the Installation Center or Workbench package).</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="name" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The package name as defined in the PackageDescription.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="type" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The package type as defined in the PackageDescription.</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="full"/>
+                    <xsd:enumeration value="patch"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="version" type="xsd:string" use="required">
+            <xsd:annotation>
+                <xsd:documentation>The package version as defined in the PackageDescription.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="uploadToRepository" type="xsd:boolean" default="false">
+            <xsd:annotation>
+                <xsd:documentation>If 'true' the supplemental package will be imported into Installation Center Repsoitory together with the install packages.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

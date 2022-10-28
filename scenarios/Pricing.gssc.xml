@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Scenario dataWarehouse="false" database="Oracle" desc="This scenario will all Pricing packages." id="Pricing" name="Pricing" operatingsystem="Linux" vddbRequired="false" version="1.1">
+    <Installation downloadSiteFilter="8.8.1" generateDDL="false" haltOnError="true">
+        <Package category="Starterset" destination="GoldenCopy" id="Full_Starterset_Market_Data_Solution" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Full_GoldenSource_Objects_Market_Data" optional="false"/>
+        <Package category="GSO Definition" destination="GoldenCopy" id="Patch_GoldenSource_Objects_Market_Data" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Pricing_Workflows" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Price_Loader_Workflows" optional="false"/>
+        <Package category="Workflow" destination="GoldenCopy" id="Full_Market_Data_Solution_Workflows" optional="false"/>
+    </Installation>
+    <SupplementalPackages>
+        <Package category="Application" id="Full_Market_Data_Solution_Screens" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Pricing_Workbench_Configuration_Screens" uploadToRepository="true"/>
+        <Package category="Application" id="Patch_Pricing_Workbench_Configuration_Screens" uploadToRepository="true"/>
+        <Package category="Application" id="Full_Pricing_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+		<Package category="Application" id="Full_Utility_Plugin" isActivityFeature="true" uploadToRepository="true"/>
+    </SupplementalPackages>
+</Scenario>

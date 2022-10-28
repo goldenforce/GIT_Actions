@@ -1,0 +1,134 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thegoldensource.cm</groupId>
+	<artifactId>InstallationScenariosOracle</artifactId>
+	<version>8.7.1</version>
+	<name>Installation Scenarios Oracle</name>
+	
+	<distributionManagement>
+		<repository>
+			<id>pacman</id>
+			<name>releases</name>
+			<url>http://cmdev:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-1</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<files>
+								<file>version.properties</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<id>renaming-xml</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>							
+							<target name="renaming-xml">
+								<copy file="PackageDescription.xml.template" tofile="target/PackageDescription.xml" />
+								<copy file="ReleaseNotes.html" tofile="target/ReleaseNotes.html" />
+								<copy file="MANIFEST.MF.template" tofile="META-INF/MANIFEST.MF" />
+								<replace dir="META-INF" includes="MANIFEST.MF">
+									<replacefilter token="PACKAGE_NAME" value="${PACKAGE_NAME}" />
+									<replacefilter token="PACKAGE_ID" value="${PACKAGE_ID}" />
+									<replacefilter token="PACKAGE_FEATURE_VERSION" value="${PACKAGE_VERSION}" />
+								</replace>
+								<replace dir="target" includes="PackageDescription.xml">
+									<replacefilter token="PACKAGE_NAME" value="${PACKAGE_NAME}" />
+									<replacefilter token="PACKAGE_DESCRIPTION" value="${PACKAGE_ID}" />
+									<replacefilter token="PACKAGE_VERSION" value="${PACKAGE_VERSION}" />
+									<replacefilter token="COMPONENT_NAME" value="${COMPONENT_NAME}" />
+								</replace>
+								<replace dir="target" includes="ReleaseNotes.html">
+									<replacefilter token="%Copyright" value="${Copyright_year}" />
+								</replace>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>  
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>xml-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>transform</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<transformationSets>
+						<transformationSet>
+							<dir>scenarios</dir>
+								<includes>
+									<include>*.gssc.xml</include>
+								</includes>
+							<stylesheet>transformScenario.xsl</stylesheet>
+						</transformationSet>
+					</transformationSets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>Installation-Scenarios-Oracle-feature</id>
+						<phase>generate-test-sources</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptor>assembly/iso_zip.xml</descriptor>
+							<finalName>ISO</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<archive>
+								<manifestEntries>
+									<Built-By/>
+								</manifestEntries>
+							</archive>
+						</configuration>
+					</execution>
+					<execution>
+						<id>Installation-Scenarios-Oracle-zip</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptor>assembly/iso_finalzip.xml</descriptor>
+							<finalName>Installation_Scenarios_${PACKAGE_VERSION}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
