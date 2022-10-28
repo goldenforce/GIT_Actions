@@ -36,7 +36,7 @@ jobs:
         name: target-without-markdown
         path: |
           target
-          !target/**/Installation*.zip
+          Installation*.zip
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
